@@ -1,0 +1,111 @@
+
+main{
+    background: url(../img/background5.jpg);
+    height: 100vh;
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-section-one{
+    width: 1000px;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.register-section-one-article-one{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    padding-left: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+.register-section-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-register{
+    text-transform:uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #4a4a4a;
+}
+
+
+/*Article 2*/
+
+.register-section-one-article-two{
+    background-color: #444341e7;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.p-text{
+    color: rgb(199, 193, 193);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+
+/*Media query*/
+
+@media((max-width: 1007px)){
+    main{
+        background: url(../img/background5.jpg);
+        width: 100%;
+        padding-top: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .register-section-one{
+        width: 100%;
+        background-color: none;
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+
+
+    .register-section-one-article-two{
+    background-color: #444341e7;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+}
+
+.register-section-one-article-one{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    padding-left: 30px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+}
+
