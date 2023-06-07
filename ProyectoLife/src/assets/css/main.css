@@ -44,6 +44,15 @@ input[type=text], input[type=email], input[type=tel], input[type=url], input[typ
     color: #a2a2a2;
   }
 
+
+
+
+  input:focus {
+    /* Estilos que deseas aplicar cuando el input está seleccionado */
+
+    border-color: #82c337;
+    box-shadow: 0 0 5px #82c337;
+  }
   span{
     color: #82c337;
   }
@@ -109,3 +118,35 @@ h3{
 .button-icon{
     padding-right: 20px;
 }
+
+
+/*loader*/
+
+#loader {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.916);
+    z-index: 9999;
+  }
+  
+  .loader-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #e2dede;
+    border-top: 4px solid #82c337;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
