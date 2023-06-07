@@ -1,5 +1,23 @@
-# E.A.B.M.O.D.E.L
-Presentes:
+## `E.A.B.M.O.D.E.L - Equipo alfa buena maravilla onda dinamita escuadrón lobo`
+
+<div style="text-align:center;">
+<img src="https://pbs.twimg.com/media/E-Z9yd8WYAQMl-v?format=jpg&name=medium" style="max-width:50%; height:auto;" />
+</div>
+
+<p style="margin-bottom: 50px;"></p>
+¡Bienvenidos al perfil de nuestro equipo! Somos un grupo de desarrolladores de la UTN San Rafael comprometidos con la creación de soluciones tecnológicas innovadoras y eficientes.
+
+🚀💻💡🤖🎨🔍📈
+
+En E.A.B.M.O.D.E.L combinamos nuestra pasión por la tecnología con habilidades en diferentes áreas, incluyendo diseño, programación, inteligencia artificial, análisis de datos y mucho más.
+
+Nuestro objetivo es crear proyectos de alta calidad que impacten positivamente en la vida de las personas y las empresas. Nos esforzamos por mantenernos actualizados en las últimas tendencias y herramientas tecnológicas para ofrecer soluciones creativas y eficientes.
+
+En este perfil podrás encontrar algunos de nuestros proyectos destacados, así como información sobre cada uno de nuestros miembros. Si estás interesado en colaborar con nosotros, no dudes en ponerte en contacto.
+
+¡Gracias por visitarnos! 🙌💻👨‍💻👩‍💻🚀
+
+### `INTEGRANTES:`
 
 ♦Gabriel Hernán Osores
 
@@ -13,9 +31,9 @@ Presentes:
 
 ♦María del Rosario Campora.
 
-♦Sebastián Luis Castellani. (Se dieron de baja)
+♦Sebastián Luis Castellani. (De baja voluntaria)
 
-♦Rocío Belén Noceti. (Se dieron de baja)
+♦Rocío Belén Noceti. (De baja voluntaria)
 
 ♦Leandro Ariel Saint Bonnet.
 
@@ -24,8 +42,16 @@ Presentes:
 ♦Erwin Leandro Marte.
 
 
+## :calendar: `Organización Semanal`
 
-Tercer Semestre 
+| **Número de semana** | **Scrum Master** |
+| ---- | ---- |
+| :office_worker: semana 1 | ** |
+| :office_worker: semana 2 | ** |
+| :office_worker: semana 3 | ** |
+| :office_worker: semana 4 | ** |
+| :office_worker: semana 5 | ** |
+| :office_worker: semana 6 | ** |
+| :office_worker: semana 7 | ** |
+| :office_worker: semana 8 | ** |
 
-💻 Laboratorio: Python y JavaScript Lunes.
-💻 Programación: Java Miércoles.
