@@ -46,10 +46,10 @@ En este perfil podrás encontrar algunos de nuestros proyectos destacados, así 
 
 | **Número de semana** | **Scrum Master** |
 | ---- | ---- |
-| :office_worker: semana 1 | ** |
-| :office_worker: semana 2 | ** |
-| :office_worker: semana 3 | ** |
-| :office_worker: semana 4 | ** |
+| :office_worker: semana 1 | Agustin Nahuel Saravia |
+| :office_worker: semana 2 | Erwin Leandro Marte |
+| :office_worker: semana 3 | Augusto Damián Monza |
+| :office_worker: semana 4 | María del Rosario Campora |
 | :office_worker: semana 5 | ** |
 | :office_worker: semana 6 | ** |
 | :office_worker: semana 7 | ** |
