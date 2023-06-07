@@ -13,9 +13,9 @@ Presentes:
 
 ♦María del Rosario Campora.
 
-♦Sebastián Luis Castellani.
+♦Sebastián Luis Castellani. (Se dieron de baja)
 
-♦Rocío Belén Noceti.
+♦Rocío Belén Noceti. (Se dieron de baja)
 
 ♦Leandro Ariel Saint Bonnet.
 
