@@ -42,9 +42,9 @@ En este perfil podrás encontrar algunos de nuestros proyectos destacados, así 
 ♦Erwin Leandro Marte.
 
 
-## :calendar: `Organización Semanal`
+## :calendar: `Organización`
 
-| **Número de semana** | **Scrum Master** |
+| **Número de Sprint** | **Scrum Master** |
 | ---- | ---- |
 | :office_worker: Sprint 1 | Agustin Nahuel Saravia |
 | :office_worker: Sprint 2 | Erwin Leandro Marte |
