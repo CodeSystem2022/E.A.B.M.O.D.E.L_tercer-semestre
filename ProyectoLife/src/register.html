@@ -18,24 +18,24 @@
                 <article>
                     <h2 class="title-register">Register <span>Life</span></h2>
                 </article>
-                <form class="register-section-form">
+                <form class="register-section-form" id="form-register">
 
                     <label>Nombre</label>
-                    <input type="text" required placeholder="Ingresa tu Nombre" />
+                    <input id="name" type="text" required placeholder="Ingresa tu Nombre"/>
 
                     <label>Apellido</label>
-                    <input type="text" placeholder="Ingresa tu Apellido" required />
+                    <input id="lastName" type="text" placeholder="Ingresa tu Apellido"  required />
 
                     <label>Correo Electronico</label>
-                    <input type="email" placeholder="Ingresa tu Correo" required />
+                    <input id="email" type="email" placeholder="Ingresa tu Correo" required />
 
                     <label>Contraseña</label>
-                    <input type="password" placeholder="Ingresa tu Contraseña" required />
+                    <input id="password" type="password" placeholder="Ingresa tu Contraseña" required />
 
                     <label>Confirmar Contraseña</label>
-                    <input type="password" placeholder="Ingresa tu Contraseña" required/>
+                    <input id="confirmPassword" type="password" placeholder="Confirma tu Contraseña" required/>
 
-                    <button>
+                    <button type="submit">
                         <a href="./inicio-seccion.html">
                             <div class="button-style-1">
                                 <div class="button-name">
@@ -79,6 +79,6 @@
     </main>
     
     <script src="./assets/js/modules/loader.js"></script>
-
+    <script type="module" src="./assets/js/validation.js"></script>
 </body>
 </html>
