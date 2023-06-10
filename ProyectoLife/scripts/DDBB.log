@@ -1,5 +1,5 @@
-29 - 05 - 2023 - INFO - Se extrajo la informaciÃ³n del .env
-29 - 05 - 2023 - INFO - ConexiÃ³n exitosa a la DDBB y se extrajo la query
-29 - 05 - 2023 - INFO - Empty DataFrame
-Columns: [id, usuario, contraseÃ±a]
+10 - 06 - 2023 - INFO - Se extrajo la información del .env
+10 - 06 - 2023 - INFO - Conexión exitosa a la DDBB y se extrajo la query
+10 - 06 - 2023 - INFO - Empty DataFrame
+Columns: [id, usuario, contraseña, email]
 Index: []
