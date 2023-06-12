@@ -10,6 +10,9 @@ logging.basicConfig(filename='scripts/DDBB.log',
                     datefmt='%d - %m - %Y')
 
 def main():
+    '''
+    Esta función me permite unificar todas las tareas/funciones
+    '''
     TransformAndLoad()
 
 if __name__ == '__main__':
