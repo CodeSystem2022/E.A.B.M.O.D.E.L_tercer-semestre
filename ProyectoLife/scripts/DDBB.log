@@ -1,5 +1,14 @@
-10 - 06 - 2023 - INFO - Se extrajo la información del .env
-10 - 06 - 2023 - INFO - Conexión exitosa a la DDBB y se extrajo la query
-10 - 06 - 2023 - INFO - Empty DataFrame
-Columns: [id, usuario, contraseña, email]
-Index: []
+
+12 - 06 - 2023 - INFO - Se extrajo la información del .env
+12 - 06 - 2023 - INFO - Conexión exitosa a la DDBB
+12 - 06 - 2023 - INFO - se realizó la lectura de los archivos xls
+12 - 06 - 2023 - INFO - Tabla normalizada
+12 - 06 - 2023 - INFO - Tabla normalizada
+12 - 06 - 2023 - INFO - Tabla normalizada
+12 - 06 - 2023 - INFO - Tabla normalizada
+12 - 06 - 2023 - INFO - Tabla normalizada
+12 - 06 - 2023 - INFO - Tabla normalizada
+12 - 06 - 2023 - INFO - Tabla normalizada
+12 - 06 - 2023 - INFO - Tabla normalizada
+12 - 06 - 2023 - INFO - Tabla normalizada de Dtype y ordenada de forma ascendente en base a columna "id"
+12 - 06 - 2023 - INFO - Tabla alimentos cargada a la DDBB
