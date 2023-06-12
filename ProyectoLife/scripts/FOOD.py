@@ -15,6 +15,7 @@ def FillAndReplace(tabla) -> pd.DataFrame:
 
         #elimino filas NaN en base a la columna id
         tabla.dropna(subset='id', inplace=True)
+
         #cambio valores "..." y NaN por 0
         tabla.replace(to_replace='...', value= np.nan, inplace=True)
         tabla.fillna(value=0, inplace=True)
@@ -34,6 +35,7 @@ def TransformAndLoad()-> pd.DataFrame:
     try:
         engine = connect_DDBB()
         path = 'scripts\Dataset'
+        
         carnes = pd.read_excel(path +'\Carnes.xls')
         cereales = pd.read_excel(path + '\Cereales.xls')
         frutas = pd.read_excel(path + '\Frutas.xls')
@@ -48,9 +50,7 @@ def TransformAndLoad()-> pd.DataFrame:
     except Exception as e:
         logging.error(e)
 
-    
 
-    #Normalizado de la columna carne
     try:
         #Normalizo las columnas del df grasas
         grasas = grasas.iloc[7:,[0,1,5,7]]
