@@ -1,0 +1,223 @@
+
+.mini-menu-row-column .material-icons-outlined{
+    font-size: 30px; 
+    color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mini-menu-row-column-two .material-icons-outlined{
+    font-size: 30px; 
+    color: #9cc670
+;
+    margin-right: 10px;
+}
+
+
+.first_section{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    background-color: #161616;
+    border-radius: 10px;
+    padding-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+.first_section h1{
+    color: #4E9F3D;
+    text-transform: initial;
+    margin-top: 5px;
+    text-transform: initial;
+    font-weight: lighter;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.first_section h6{
+    color: rgb(216, 210, 210);
+    font-size: 16px;
+    
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.first_section_two{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+
+
+/*Conect - user*/
+.nameUser{
+    text-transform:capitalize;
+    font-weight: bold;
+}
+
+
+
+/*second section*/
+
+
+.second_section{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+    margin-right: 10px;
+    
+}
+
+/*Segunda seccion - fila 1*/
+#second_section_row_first{
+    background-color:#161616;
+    color: azure;
+    flex-direction: row;
+    display: flex;
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-left: #4E9F3D 2px solid;
+    border-bottom: #4E9F3D 2px solid;
+}
+#second_section_row_first_columns{
+    flex-direction: column;
+    display: flex;
+    width: 350px;
+}
+
+.completedTasks{
+    color: #4E9F3D;
+    font-size: 50px;
+}
+
+.completedTasksText{
+    font-size: 25px;
+    font-weight: bold;
+    
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.completedTasksIco{
+    width: 80px;
+    height: 80px;
+}
+
+.completedTasksIco .material-icons-outlined{
+    font-size: 40px;  /* Preferred icon size */
+    color: #4E9F3D;
+  
+}
+
+.completedTasksIco .material-icons-outlined:hover{
+    color: #315429;
+    background-color: #161616;
+    width: 40px;
+    height: 40px;
+}
+
+
+/*Segunda seccion - fila 2*/
+
+.second_section_row_second{
+    background-color:#161616;
+    color: azure;
+    flex-direction: row;
+    display: flex;
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+    border-left: #7ec670 2px solid;
+    border-bottom: #7ec670 2px solid;
+}
+
+#second_section_row_second_first_columns{
+    flex-direction: column;
+    display: flex;
+    width: 350px;
+}
+
+.pendingTasks{
+    color: #7ec670;
+    font-size: 50px;
+}
+
+.pendingTasksText{
+    font-size: 25px;
+    font-weight: bold;
+    
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.pendingTasksIco .material-icons-outlined{
+    font-size: 40px;  /* Preferred icon size */
+    color: #7ec670;
+  
+}
+
+.pendingTasksIco .material-icons-outlined:hover{
+    color: #4E9F3D;
+    background-color: #16161600;
+    width: 40px;
+    height: 40px;
+}
+
+.second_section_row_third{
+    background-color:#161616;
+    color: azure;
+    flex-direction: row;
+    display: flex;
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+    border-left: #9cc670
+ 2px solid;
+    border-bottom: #9cc670
+ 2px solid;
+}
+
+/*Segunda seccion - fila 3*/
+#second_section_row_second_third_columns{
+    flex-direction: column;
+    display: flex;
+    width: 350px;
+}
+
+.incompleteTasks{
+    color: #9cc670
+;
+    font-size: 50px;
+}
+
+.incompleteTasksText{
+    font-size: 25px;
+    font-weight: bold;
+    
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.incompleteTasksIco .material-icons-outlined{
+    font-size: 40px;  /* Preferred icon size */
+    color: #9cc670
+;
+  
+}
+
+.incompleteTasksIco .material-icons-outlined:hover{
+    color: #9cc670
+;
+    background-color: #16161600;
+    width: 40px;
+    height: 40px;
+}
