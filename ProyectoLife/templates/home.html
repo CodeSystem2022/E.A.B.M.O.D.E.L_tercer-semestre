@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined">
+
+    <link rel="stylesheet" href="./static/css/main.css">
+    <link rel="stylesheet" href="./static/css/menu.css">
+    <link rel="stylesheet" href="./static/css/home/home.css">
+
+    <script src="https://kit.fontawesome.com/d54fb62c44.js" crossorigin="anonymous"></script>
+
+
+    <title>LIFE</title>
+</head>
+<body>
+    <header>
+        <article>
+            <a class="logo" href="index.html"><img src="./static/img/hoja.png" alt="Logo"></a>
+        </article>
+        <button id="menu-icon-mobile">
+            <i class="fas fa-bars" id="menu-mobile-icon-open"></i>
+            <i class="fas fa-times" id="menu-mobile-icon-close"></i>
+        </button>
+        <nav>
+            <ul id="menu-first">
+                <li class="menu-first-item-class active">
+                    <a href="#">Inicio</a>
+                </li>
+                <li class="menu-first-item-class">
+                    <a href="#">Perfil</a>
+                </li>
+                <li class="menu-first-item-class">
+                    <a href="#">Cerrar Sesion</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="first_section">
+            <div>
+                <article>
+                    <h1> Hi <span class="nameUser">agustin</span>, ¡Bienvenido a Life!</h1>
+                </article>
+                <article class="first_section_two">
+                    <h6>
+                        In this section you will be able to know the diagnoses of your tasks of your platform.
+                    </h6>
+                </article>
+            </div>
+            <div>
+                <form>
+                    <div>
+                        <label>Peso Inicial</label>
+                        <input type="email" placeholder="Peso Inicial" required />
+                    </div>
+                    <div>
+                        <label>Altura</label>
+                        <input type="email" placeholder="Altura" required />
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+        <section class="second_section">
+
+                <article id="second_section_row_first">
+                    <article id="second_section_row_first_columns">
+                        <h3 class="completedTasks">         
+                            20
+                        </h3>
+                        <h3 class="completedTasksText">
+                            CALORIAS CONSUMIDAS 
+                        </h3>
+                        <p>Check your completed tasks in a closer way!</p>
+                    </article>
+                    <div class="completedTasksIco">
+                        <span class="material-icons-outlined">
+                            task_alt
+                        </span>
+                    </div>
+                </article>
+
+            <article class="second_section_row_second">
+                <article id="second_section_row_second_first_columns">
+                    <h3 class="pendingTasks">
+                        20
+                    </h3>
+                    <h3 class="pendingTasksText">Calorias Quemadas</h3>
+                    <p>Check your pending tasks in a closer way!</p>
+                </article>
+                <div class="pendingTasksIco">
+                    <span class="material-icons-outlined">
+                        info
+                    </span>
+                </div>
+            </article>
+
+            <article class="second_section_row_third">
+                <article id="second_section_row_second_third_columns">
+                    <h3 class="incompleteTasks">
+                       20 
+                    </h3>
+                    <h3 class="incompleteTasksText">INCOMPLETE TASKS</h3>
+                    <p>Check your incomplete tasks in a closer way!</p>
+                </article>
+                <div class="incompleteTasksIco">
+                    <span class="material-icons-outlined">
+                        highlight_off
+                    </span>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+
+    <div id="loader">
+        <div class="loader-spinner"></div>
+    </div>
+    
+    <script src="./static/js/modules/loader.js"></script>
+    <script src="./static/js/modules/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/main.css">
+    <link rel="stylesheet" href="./static/css/login-register.css">
+    <title>Life</title>
+</head>
+<body>
+
+    <header>
+    </header>
+    <main>
+        <section class="register-section-one">
+            <article class="register-section-one-article-one">
+                <article>
+                    <h2 class="title-register">Register <span>Life</span></h2>
+                </article>
+                <form class="register-section-form" id="form-register">
+
+                    <label>Nombre</label>
+                    <input id="name" type="text" required placeholder="Ingresa tu Nombre"/>
+
+                    <label>Apellido</label>
+                    <input id="lastName" type="text" placeholder="Ingresa tu Apellido"  required />
+
+                    <label>Correo Electronico</label>
+                    <input id="email" type="email" placeholder="Ingresa tu Correo" required />
+
+                    <label>Contraseña</label>
+                    <input id="password" type="password" placeholder="Ingresa tu Contraseña" required />
+
+                    <label>Confirmar Contraseña</label>
+                    <input id="confirmPassword" type="password" placeholder="Confirma tu Contraseña" required/>
+
+                    <button type="submit">
+                        <a href="./inicio-seccion.html">
+                            <div class="button-style-1">
+                                <div class="button-name">
+                                    Registrar
+                                </div>
+                                <div class="button-icon">
+                                    >>
+                                </div>
+                            </div>
+                        </a>
+                    </button>
+
+                </form>
+            </article>
+            
+            <article class="register-section-one-article-two">
+                <h3>¿Ya <span>estas</span> registrado?</h3>
+                <p class="p-text">Si tu usuario ya se encuentra registrado porfavor ingrese en el boton de Iniciar Sesión.</p>
+
+
+                <button>
+                    <a href="./login.html">
+                        <div class="button-style-2">
+                            <div class="button-name">
+                                Iniciar Sesión
+                            </div>
+                            <div class="button-icon">
+                                >>
+                            </div>
+                        </div>
+                    </a>
+                </button>
+
+
+            </article>
+        </section>
+
+        <div id="loader">
+            <div class="loader-spinner"></div>
+        </div>    
+    </main>
+    
+    <script src="./static/js/modules/loader.js"></script>
+    <script type="module" src="./static/js/validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/main.css">
+    <link rel="stylesheet" href="./static/css/login-register.css">
+    <title>Life</title>
+</head>
+<body>
+
+    <header>
+    </header>
+    <main>
+        <section class="register-section-one">
+            <article class="register-section-one-article-one">
+                <article>
+                    <h2 class="title-register">Login <span>Life</span></h2>
+                </article>
+                <form class="register-section-form">
+
+                    <label>Correo Electronico</label>
+                    <input type="email" placeholder="Ingresa tu Correo" required />
+
+                    <label>Contraseña</label>
+                    <input type="password" placeholder="Ingresa tu Contraseña" required/>
+
+                    <button>
+                        <a href="./inicio-seccion.html">
+                            <div class="button-style-1">
+                                <div class="button-name">
+                                    Iniciar Sesión
+                                </div>
+                                <div class="button-icon">
+                                    >>
+                                </div>
+                            </div>
+                        </a>
+                    </button>
+
+
+                </form>
+            </article>
+            
+            <article class="register-section-one-article-two">
+                <h3>¿Todavia no te has <span>creado</span> una cuenta?</h3>
+                <p class="p-text">Para utilizar la aplicación Life, es necesario realizar un proceso de autenticación. Este paso garantiza la seguridad de tus datos y proporciona una experiencia personalizada y protegida.</p>
+                
+                <button>
+                    <a href="./register.html">
+                        <div class="button-style-2">
+                            <div class="button-name">
+                                Registrar
+                            </div>
+                            <div class="button-icon">
+                                >>
+                            </div>
+                        </div>
+                    </a>
+                </button>
+
+            </article>
+        </section>
+
+        <div id="loader">
+            <div class="loader-spinner"></div>
+        </div>    
+
+    </main>
+    
+    <script src="./static/js/modules/loader.js"></script>
+
+</body>
+</html>
