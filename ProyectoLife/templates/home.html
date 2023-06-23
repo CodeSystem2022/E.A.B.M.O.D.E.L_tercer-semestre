@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../static/css/main.css">
     <link rel="stylesheet" href="../static/css/menu.css">
     <link rel="stylesheet" href="../static/css/home/home.css">
-    <link rel="stylesheet" href="../static/css/home/graphics.css">
+    <link rel="stylesheet" href="../static/css/home/canvas.css">
 
     <script src="https://kit.fontawesome.com/d54fb62c44.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
@@ -121,9 +121,10 @@
 
     </main>
 
-    <canvas id="myChart1" style="display: none;"width="400" height="400"></canvas>
-    <canvas id="myChart2" style="display: none;"width="400" height="400"></canvas>
-    <canvas id="myChart3" style="display: none;"width="400" height="400"></canvas>
+    <div class="canvas-container" id="canvas-container_one" style="display: block;"><canvas class="canvas" id="myChart1"></canvas></div>
+    <div class="canvas-container" id="canvas-container_two" style="display: none;"><canvas class="canvas" id="myChart2"></canvas></div>
+    <div class="canvas-container" id="canvas-container_three" style="display: none;"><canvas class="canvas" id="myChart3"></canvas></div>
+
 
     <div id="loader">
         <div class="loader-spinner"></div>
