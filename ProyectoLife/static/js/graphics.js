@@ -3,30 +3,28 @@
 let activeChartId = null;
 
 function chart_visibility(chartId) {
-    let chart = document.getElementById(chartId);
-    let allCharts = document.querySelectorAll("canvas");
+    let chartContainer = document.getElementById(chartId);
+    let allChartContainers = document.querySelectorAll(".canvas-container");
 
     if (activeChartId === chartId) {
-        chart.style.display = "none";
+        chartContainer.style.display = "none";
         activeChartId = null;
     }else{
+        for (let i = 0; i < allChartContainers.length; i++) {
+            allChartContainers[i].style.display = "none";
+        };
 
-    for (let i = 0; i < allCharts.length; i++) {
-        allCharts[i].style.display = "none";
-    };
-
-        // Mostrar el gráfico seleccionado
-        chart.style.display = "block";
+        chartContainer.style.display = "block";
         activeChartId = chartId;
-    } ;
+    };
 };
 
 document.getElementById("second_section_row_first").addEventListener("click", function() {
-    chart_visibility("myChart1");
+    chart_visibility("canvas-container_one");
 });
 document.getElementById("second_section_row_second").addEventListener("click", function() {
-    chart_visibility("myChart2");
+    chart_visibility("canvas-container_two");
 });
 document.getElementById("second_section_row_third").addEventListener("click", function() {
-    chart_visibility("myChart3");
+    chart_visibility("canvas-container_three");
 });
