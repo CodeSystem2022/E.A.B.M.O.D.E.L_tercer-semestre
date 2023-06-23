@@ -1,35 +1,55 @@
-const  ctx = document.getElementById('myChart').getContext('2d');
+"use strict";
 
-// Setup
-const config =   {
-  type: 'bar',
-  data: {
-      labels: ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', "Domingo"],
-      datasets: [{
-          label: 'Calorias blabla lorem ipsum (?',
-          data: [12, 19, 3, 5, 2, 3, 5],
-          backgroundColor: [
-              'rgba(255, 99, 132, 0.2)',
-              'rgba(54, 162, 235, 0.2)',
-              'rgba(255, 206, 86, 0.2)',
-              'rgba(75, 192, 192, 0.2)',
-              'rgba(153, 102, 255, 0.2)',
-              'rgba(255, 159, 64, 0.2)',
-              'rgba(255, 159, 64, 0.2)'
-          ],
-          borderColor: [
-              'rgba(255, 99, 132, 1)',
-              'rgba(255, 99, 132, 1)',
-              'rgba(54, 162, 235, 1)',
-              'rgba(255, 206, 86, 1)',
-              'rgba(75, 192, 192, 1)',
-              'rgba(153, 102, 255, 1)',
-              'rgba(255, 159, 64, 1)'
-          ],
-          borderWidth: 1
-      }]
-  }
-}
+// New chart
+function createChart(chartId, config) {
+    const chartElement = document.getElementById(chartId);
+    const ctx = chartElement.getContext('2d');
 
-// Char init
-const  myChart = new Chart(ctx, config);
+    return new Chart(ctx, config);
+};
+
+// Test
+const config1 = {
+    type: 'bar',
+    data: {
+        labels: ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'],
+        datasets: [{
+            label: 'Calorías blabla (1)',
+            data: [12, 19, 3, 5, 2, 3, 5],
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderColor: 'rgba(255, 99, 132, 1)',
+            borderWidth: 3
+        }]
+    }
+};
+const config2 = {
+    type: 'bar',
+    data: {
+        labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo'],
+        datasets: [{
+            label: 'Ventas mensuales',
+            data: [1200, 1500, 900, 1100, 800],
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 3
+        }]
+    }
+};
+const config3 = {
+    type: 'line',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: 'Puntos de datos',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderColor: 'rgba(255, 99, 132, 1)',
+            borderWidth: 3
+        }]
+    }
+};  
+
+// Chart init
+const  myChart1 = createChart('myChart1', config1);
+const  myChart2 = createChart('myChart2', config2);
+const  myChart3 = createChart('myChart3', config3);
