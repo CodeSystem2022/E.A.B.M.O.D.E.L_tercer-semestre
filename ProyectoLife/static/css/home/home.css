@@ -1,3 +1,4 @@
+/*background: url("/static/img/background.jpg");*/
 
 .mini-menu-row-column .material-icons-outlined{
     font-size: 30px; 
@@ -62,6 +63,7 @@
 
 
 .second_section{
+    background: transparent;
     display: flex;
     flex-direction: row;
     margin-top: 30px;
@@ -70,14 +72,21 @@
     margin-right: 10px;
     
 }
+/*modified after 750px*/
+/*modificados seccion 1,2,3 su width a fit content en lugar de 500px*/
+@media screen and (max-width: 750px){
+    .second_section{
+        display: grid;
+    }
+}
 
 /*Segunda seccion - fila 1*/
 #second_section_row_first{
     background-color:#161616;
     color: azure;
     flex-direction: row;
-    display: flex;
-    width: 500px;
+    display: flex; 
+    width: fit-content;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 30px;
@@ -87,7 +96,6 @@
 #second_section_row_first_columns{
     flex-direction: column;
     display: flex;
-    width: 350px;
 }
 
 .completedTasks{
@@ -129,7 +137,7 @@
     color: azure;
     flex-direction: row;
     display: flex;
-    width: 500px;
+    width: fit-content;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 30px;
@@ -141,7 +149,6 @@
 #second_section_row_second_first_columns{
     flex-direction: column;
     display: flex;
-    width: 350px;
 }
 
 .pendingTasks{
@@ -175,22 +182,21 @@
     color: azure;
     flex-direction: row;
     display: flex;
-    width: 500px;
+    width: fit-content;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 30px;
     margin-bottom: 30px;
     border-left: #9cc670
- 2px solid;
+    2px solid;
     border-bottom: #9cc670
- 2px solid;
+    2px solid;
 }
 
 /*Segunda seccion - fila 3*/
 #second_section_row_second_third_columns{
     flex-direction: column;
     display: flex;
-    width: 350px;
 }
 
 .incompleteTasks{
@@ -211,7 +217,6 @@
     font-size: 40px;  /* Preferred icon size */
     color: #9cc670
 ;
-  
 }
 
 .incompleteTasksIco .material-icons-outlined:hover{
