@@ -1,47 +1,32 @@
 "use strict";
 
-// Capture html element
-let first_article_section = document.getElementById("second_section_row_first");
-let second_article_section = document.querySelector(".second_section_row_second");
-let third_article_section = document.querySelector(".second_section_row_third");
+let activeChartId = null;
 
-// Create the initial div for graphics
-let div_graphics = document.createElement("div");
-div_graphics.style.display = "none";
-div_graphics.innerHTML = "lorem ipsum blaaaaaaaaaaaaaaaaaaaaaa bla";
-div_graphics.classList.add("graphics-div");
+function chart_visibility(chartId) {
+    let chart = document.getElementById(chartId);
+    let allCharts = document.querySelectorAll("canvas");
 
-let currentDiv = null;
+    if (activeChartId === chartId) {
+        chart.style.display = "none";
+        activeChartId = null;
+    }else{
 
-// Function to toggle div visibility
-function toggleDiv(articleSection) {
-    if (currentDiv === articleSection.divGraphics) {
-        articleSection.divGraphics.style.display = "none";
-        currentDiv = null;
-    } else {
-        if (currentDiv) {
-            currentDiv.style.display = "none";
-        };
-        articleSection.divGraphics.style.display = "block";
-        currentDiv = articleSection.divGraphics;
+    for (let i = 0; i < allCharts.length; i++) {
+        allCharts[i].style.display = "none";
     };
+
+        // Mostrar el gráfico seleccionado
+        chart.style.display = "block";
+        activeChartId = chartId;
+    } ;
 };
 
-first_article_section.insertAdjacentElement("afterend", div_graphics.cloneNode(true));
-second_article_section.insertAdjacentElement("afterend", div_graphics.cloneNode(true));
-third_article_section.insertAdjacentElement("afterend", div_graphics.cloneNode(true));
-
-first_article_section.divGraphics = first_article_section.nextElementSibling;
-second_article_section.divGraphics = second_article_section.nextElementSibling;
-third_article_section.divGraphics = third_article_section.nextElementSibling;
-
-// Execute click event
-first_article_section.addEventListener("click", function() {
-    toggleDiv(first_article_section);
+document.getElementById("second_section_row_first").addEventListener("click", function() {
+    chart_visibility("myChart1");
 });
-second_article_section.addEventListener("click", function() {
-    toggleDiv(second_article_section);
+document.getElementById("second_section_row_second").addEventListener("click", function() {
+    chart_visibility("myChart2");
 });
-third_article_section.addEventListener("click", function() {
-    toggleDiv(third_article_section);
+document.getElementById("second_section_row_third").addEventListener("click", function() {
+    chart_visibility("myChart3");
 });
