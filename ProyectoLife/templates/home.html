@@ -88,39 +88,42 @@
                     </div>
                 </article>
 
-            <article class="second_section_row_second">
-                <article id="second_section_row_second_first_columns">
-                    <h3 class="pendingTasks">
-                        20
-                    </h3>
-                    <h3 class="pendingTasksText">Calorias Quemadas</h3>
-                    <p>Check your pending tasks in a closer way!</p>
+                <article class="second_section_row_second" id="second_section_row_second">
+                    <article id="second_section_row_second_first_columns">
+                        <h3 class="pendingTasks">
+                            20
+                        </h3>
+                        <h3 class="pendingTasksText">Calorias Quemadas</h3>
+                        <p>Check your pending tasks in a closer way!</p>
+                    </article>
+                    <div class="pendingTasksIco">
+                        <span class="material-icons-outlined">
+                            info
+                        </span>
+                    </div>
                 </article>
-                <div class="pendingTasksIco">
-                    <span class="material-icons-outlined">
-                        info
-                    </span>
-                </div>
-            </article>
 
-            <article class="second_section_row_third">
-                <article id="second_section_row_second_third_columns">
-                    <h3 class="incompleteTasks">
-                        20 
-                    </h3>
-                    <h3 class="incompleteTasksText">INCOMPLETE TASKS</h3>
-                    <p>Check your incomplete tasks in a closer way!</p>
+                <article class="second_section_row_third" id="second_section_row_third">
+                    <article id="second_section_row_second_third_columns">
+                        <h3 class="incompleteTasks">
+                            20 
+                        </h3>
+                        <h3 class="incompleteTasksText">INCOMPLETE TASKS</h3>
+                        <p>Check your incomplete tasks in a closer way!</p>
+                    </article>
+                    <div class="incompleteTasksIco">
+                        <span class="material-icons-outlined">
+                            highlight_off
+                        </span>
+                    </div>
                 </article>
-                <div class="incompleteTasksIco">
-                    <span class="material-icons-outlined">
-                        highlight_off
-                    </span>
-                </div>
-            </article>
         </section>
 
     </main>
 
+    <canvas id="myChart1" style="display: none;"width="400" height="400"></canvas>
+    <canvas id="myChart2" style="display: none;"width="400" height="400"></canvas>
+    <canvas id="myChart3" style="display: none;"width="400" height="400"></canvas>
 
     <div id="loader">
         <div class="loader-spinner"></div>
@@ -129,6 +132,6 @@
     <script src="../static/js/modules/loader.js"></script>
     <script src="../static/js/modules/menu.js"></script>
     <script src="../static/js/graphics.js"></script>
-    <script src="../static/js/chartjs/chart.js"></script>
+    <script src="../static/js/charts/chart.js"></script>
 </body>
 </html>
