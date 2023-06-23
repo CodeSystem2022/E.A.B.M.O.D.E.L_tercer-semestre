@@ -7,6 +7,7 @@ let third_article_section = document.querySelector(".second_section_row_third");
 
 // Create the initial div for graphics
 let div_graphics = document.createElement("div");
+div_graphics.style.display = "none";
 div_graphics.innerHTML = "lorem ipsum blaaaaaaaaaaaaaaaaaaaaaa bla";
 div_graphics.classList.add("graphics-div");
 
