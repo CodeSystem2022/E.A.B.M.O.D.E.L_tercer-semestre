@@ -16,10 +16,32 @@ const config1 = {
         datasets: [{
             label: 'Calorías blabla (1)',
             data: [12, 19, 3, 5, 2, 3, 5],
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-            borderColor: 'rgba(255, 99, 132, 1)',
-            borderWidth: 3
+            backgroundColor: '#9F9F9FAD',
+            borderColor: 'white',
+            borderWidth: 1
         }]
+    },
+    options: {
+        scales: {
+            x: {
+                grid: {
+                    color: '#9cc670'
+                },
+                ticks: {
+                    color: 'white',
+                    padding: 10
+                }
+            },
+            y: {
+                grid: {
+                    color: '#9cc670'
+                },
+                ticks: {
+                    color: 'white',
+                    padding: 10
+                }
+            }
+        }
     }
 };
 const config2 = {
@@ -29,10 +51,32 @@ const config2 = {
         datasets: [{
             label: 'Ventas mensuales',
             data: [1200, 1500, 900, 1100, 800],
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgba(54, 162, 235, 1)',
-            borderWidth: 3
+            backgroundColor: '#9F9F9FAD',
+            borderColor: 'white',
+            borderWidth: 1
         }]
+    },
+    options: {
+        scales: {
+            x: {
+                grid: {
+                    color: '#9cc670'
+                },
+                ticks: {
+                    color: 'white',
+                    padding: 10
+                }
+            },
+            y: {
+                grid: {
+                    color: '#9cc670'
+                },
+                ticks: {
+                    color: 'white',
+                    padding: 10,
+                }
+            }
+        }
     }
 };
 const config3 = {
@@ -42,10 +86,32 @@ const config3 = {
         datasets: [{
             label: 'Puntos de datos',
             data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-            borderColor: 'rgba(255, 99, 132, 1)',
+            backgroundColor: '#474747D9',
+            borderColor: '#474747D9',
             borderWidth: 3
         }]
+    },
+    options: {
+        scales: {
+            x: {
+                grid: {
+                    color: '#9cc670'
+                },
+                ticks: {
+                    color: 'white',
+                    padding: 25
+                }
+            },
+            y: {
+                grid: {
+                    color: '#9cc670'
+                },
+                ticks: {
+                    color: 'white',
+                    padding: 25
+                }
+            }
+        }
     }
 };  
 
