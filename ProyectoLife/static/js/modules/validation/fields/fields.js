@@ -67,10 +67,14 @@ function Name(e) {
     if (!password.value || password.value.trim().length <= 5) {
       e.preventDefault();
   
-      errorSpan.textContent = "La contraseña debe tener al menos 6 caracteres.";
-      password.parentNode.insertBefore(errorSpan, password.nextSibling);
+      const errorElement = document.getElementById("error-password");
+      if (!errorElement) {
+        errorSpan.textContent = "La contraseña debe tener al menos 6 caracteres.";
+        password.parentNode.insertBefore(errorSpan, password.nextSibling);
+      }
   
       password.style.border = "1px solid red"; // Cambiar el estilo del borde del input
+      
       return;
     } else {
       const errorElement = document.getElementById("error-password");
