@@ -18,25 +18,25 @@
                 <article>
                     <h2 class="title-register">Register <span>Life</span></h2>
                 </article>
-                <form class="register-section-form" id="form-register">
+                <form method="POST" class="register-section-form" id="form-register" action="/registro">
 
                     <label>Nombre</label>
-                    <input id="name" type="text" required placeholder="Ingresa tu Nombre"/>
+                    <input name="name" id="name" type="text" required placeholder="Ingresa tu Nombre"/>
 
                     <label>Apellido</label>
-                    <input id="lastName" type="text" placeholder="Ingresa tu Apellido"  required />
+                    <input name="lastName" id="lastName" type="text" placeholder="Ingresa tu Apellido"  required />
 
                     <label>Correo Electronico</label>
-                    <input id="email" type="email" placeholder="Ingresa tu Correo" required />
+                    <input name="email" id="email" type="email" placeholder="Ingresa tu Correo" required />
 
                     <label>Contraseña</label>
-                    <input id="password" type="password" placeholder="Ingresa tu Contraseña" required />
+                    <input name="password" id="password" type="password" placeholder="Ingresa tu Contraseña" required />
 
                     <label>Confirmar Contraseña</label>
-                    <input id="confirmPassword" type="password" placeholder="Confirma tu Contraseña" required/>
+                    <input name="confirmPassword" id="confirmPassword" type="password" placeholder="Confirma tu Contraseña" required/>
 
-                    <button type="submit">
-                        <a href="../static/inicio-seccion.html">
+                    <button href="/" type="submit">
+                        <a>
                             <div class="button-style-1">
                                 <div class="button-name">
                                     Registrar
@@ -57,7 +57,7 @@
 
 
                 <button>
-                    <a href="./login.html">
+                    <a href="/">
                         <div class="button-style-2">
                             <div class="button-name">
                                 Iniciar Sesión

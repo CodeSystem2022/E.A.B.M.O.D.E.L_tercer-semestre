@@ -1,36 +1,29 @@
-from sqlalchemy import create_engine
+from flask_sqlalchemy import SQLAlchemy
 import logging
 import pandas as pd
 from dotenv import load_dotenv
 import os
 
+load_dotenv()
+
 '''
 Este archivo permite conectarse a la Base de Datos PostgreSQL
 '''
 
-def connect_DDBB():
-    # obtengo información del archivo de configuración 
-    load_dotenv()
-    try:
-        USER_NAME = os.getenv('POSTGRES_USER')
-        PASSWORD = os.getenv('POSTGRES_PASSWORD')
-        DB_NAME = os.getenv('POSTGRES_DB')
-        HOST = os.getenv('POSTGRES_HOST')
-        logging.info('Se extrajo la información del .env')
-    
-    except Exception as e:
-        logging.error(e)
+# Varaibles globales
 
-    #conexión a la DDBB
-    try:
-        engine = create_engine(f"postgresql://{USER_NAME}:{PASSWORD}@{HOST}:5432/{DB_NAME}")
-        logging.info('Conexión exitosa a la DDBB')
-        return engine
-        
-        
-    except Exception as e:
-        logging.error(e)
+USER_NAME = os.getenv('POSTGRES_USER')
+PASSWORD = os.getenv('POSTGRES_PASSWORD')
+DB_NAME = os.getenv('POSTGRES_DB')
+HOST = os.getenv('POSTGRES_HOST')
+
+
+def get_db():
+    # si el entorno es local primero debo tener activo el proxy SQL de GCP
+    SQLALCHEMY_DATABASE_URI = f"postgresql://{USER_NAME}:{PASSWORD}@{HOST}:5432/{DB_NAME}"
+    logging.info('Conexión exitosa a la DDBB')
+    return SQLALCHEMY_DATABASE_URI
 
 
 if __name__ == '__main__':
-    connect_DDBB()
+    get_db()

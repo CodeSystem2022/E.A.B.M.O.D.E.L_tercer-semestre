@@ -1,0 +1,424 @@
+"id","alimento","energía (Kcal)","proteinas","grasa total","carbohidratos"
+1,"Arroz, grano, blanco, pulido, crudo",339,6.9,0.2,79.2
+2,"Arroz, grano, blanco, pulido, hervido",82,1.4,0.1,19.4
+3,"Avena , grano, arrollada, cruda",383,15.6,7.8,62.5
+4,"Avena, grano, arrollada, cruda",343,12.8,7.1,0.0
+5,"Avena, grano, arrollada, hervida",86,3.8,1.9,15.8
+6,"Cebada, grano, mondado, perlado, crudo",317,10.2,1.5,74.9
+7,"Cebada, grano, mondado, perlado, hervido",82,3.8,0.1,19.3
+8,"Cebada, harina ""Genser"", cruda",328,10.2,1.7,76.9
+9,"Centeno, harina, clara, cruda",332,8.9,0.9,78.5
+10,"Centeno, pan",206,8.7,0.6,48.9
+11,"Centeno, pan con harina integral",214,10.4,0.9,49.0
+12,"Maiz, choclo",97,3.7,1.2,20.5
+13,"Maiz, grano, entero (Zea mays spp)",346,9.5,0.9,74.9
+14,"Maiz, harina amarilla (polenta), cruda",369,11.1,3.2,73.9
+15,"Maiz, harina amarilla (polenta), cruda",338,9.1,4.9,73.4
+16,"Maiz, harina amarilla (polenta), hervida",68,3.2,0.8,13.7
+17,"Maiz, pan",275,9.1,2.9,53.2
+18,"Trigo, grano entero, crudo",347,12.4,2.0,69.8
+19,"Trigo, bizcochos ""Bay Biscuit""",382,5.9,10.1,72.5
+21,"Trigo, bizcochos, vainillas",401,10.2,8.9,70.0
+22,"Trigo, galleta de campo",300,9.8,1.0,63.0
+23,"Trigo, galleta marinera",361,12.8,0.7,75.9
+24,"Trigo, galletitas de agua ""Express""",442,13.5,15.5,62.0
+25,"Trigo, galletitas de agua ""Traviata""",437,12.2,13.1,67.6
+26,"Trigo, galletitas de harina blanca",410,12.2,11.6,0.0
+27,"Trigo, galletitas de harina integral",411,10.6,15.8,0.0
+28,"Trigo, galletitas dulces ""Manón""",417,8.5,10.1,73.0
+29,"Trigo, galletitas dulces ""Minue""",419,8.2,13.1,67.0
+30,"Trigo, galletitas oblea ""Opera""",442,4.9,21.1,58.0
+31,"Trigo, grisines",342,12.5,0.2,72.6
+32,"Trigo, harina tres cero",340,10.3,2.7,0.0
+33,"Trigo, harina cuatro ceros",348,10.2,2.6,0.0
+34,"Trigo, harina integral",308,11.4,3.0,0.0
+35,"Trigo, salvado",171,16.3,5.5,0.0
+36,"Trigo, pan francés",269,9.3,0.2,57.4
+37,"Trigo, pan francés",268,8.4,0.7,0.0
+38,"Trigo, pan alemán",264,8.9,0.2,56.7
+39,"Trigo, pan criollo",280,8.7,0.3,60.7
+40,"Trigo, pan de Viena",307,9.8,1.9,62.6
+41,"Trigo, pan de salvado",223,9.8,1.6,0.0
+42,"Trigo, pan negro con levadura agria",271,8.4,0.5,58.3
+43,"Trigo, pan negro con levadura comprimida",269,9.5,2.4,52.4
+44,"Trigo, pan negro sin levadura",269,9.6,0.6,56.3
+45,"Trigo, sémola, cruda",349,11.7,0.9,73.4
+46,"Trigo, sémola, hervida",70,2.4,0.0,15.0
+47,"Trigo, tallarines, frescos, hervidos",98,4.1,1.5,16.9
+50,"Achicoria, hoja, fresca, cruda",21,1.6,0.3,2.9
+51,"Ajo, bulbo, fresco, crudo",99,4.4,0.2,20.0
+52,"Alcaucil, inflorescencia, fresco, crudo",63,2.9,0.4,11.9
+53,"Alfalfa, hoja, fresca, cruda",57,6.6,0.4,6.8
+54,"Arveja, semilla, fresca, cruda",102,8.9,0.0,16.6
+55,"Arveja, semilla, fresca, hervida",77,5.8,0.0,13.4
+56,"Arveja, semilla, fresca, enlatada",105,6.0,0.8,0.0
+57,"Arveja, semilla, seca, entera, cruda ",304,22.5,2.9,0.0
+58,"Arveja, semilla, seca, partida, cruda",311,22.0,2.9,0.0
+59,"Arveja, semilla, seca, partida, hervida",129,8.2,0.7,22.5
+60,"Avellana, pepita, seca",668,12.7,60.9,17.7
+61,"Batata, raiz, fresca, cruda",84,1.1,0.0,19.8
+62,"Batata, hervida",92,1.2,0.0,21.7
+63,"Batata, frita",212,1.7,7.2,35.0
+64,"Berenjena, pulpa, fresca, cruda",28,1.1,0.2,5.5
+65,"Berro (hojas y tallo), fresco, crudo",23,1.7,0.3,3.3
+66,"Brócoli, tallo de hoja, fresco, crudo",37,3.3,0.2,5.5
+67,"Cardo (penca y hojas), fresco, crudo",25,1.4,0.2,4.4
+68,"Castaña de Pará, pepita, cruda",731,18.1,72.1,2.4
+69,"Cebolla blanca, bulbo, cruda",17,0.8,0.0,3.5
+70,"Cebolla blanca, bulbo, hervida",10,0.6,0.0,1.8
+71,"Coliflor, pimpollo, fresco, crudo",31,2.4,0.2,4.9
+72,"Chaucha, vaina y semilla, cruda",22,2.4,0.0,3.2
+73,"Escarola crespa, hoja, cruda",24,1.6,0.2,4.0
+74,"Esparrago, tallo tierno, fresco, crudo",26,2.2,0.2,3.9
+75,"Espinaca, hoja, fresca, cruda",24,3.9,0.0,2.0
+76,"Espinaca, hoja, fresca, hervida",13,2.5,0.0,0.7
+77,"Garbanzo, grano entero, seco, hervido",125,6.1,2.2,20.2
+78,"Habas, semilla inmadura, fresca, cruda",99,6.7,0.8,16.3
+79,"Hinojo, tallo, fresco, crudo",24,1.9,0.2,3.6
+80,"Lenteja, semilla entera, seca, cruda",350,20.8,0.8,64.8
+81,"Maní, semilla con piel, crudo",576,33.2,44.3,11.1
+82,"Maní, semilla sin piel, tostado",592,34.8,45.5,10.8
+83,"Mastuerzo (hoja y pecíolo), fresco, crudo",51,4.2,1.4,5.3
+84,"Nabo, raiz (pulpa), fresco, crudo",10,1.0,0.0,1.5
+85,"Nabo, hervido",11,0.8,0.0,1.9
+86,"Nuez, pepita",715,13.9,67.4,13.2
+87,"Papa, pulpa sin cáscara, fresca, cruda",88,2.7,0.0,19.3
+88,"Papa, pulpa sin cáscara, hervida ",88,2.4,0.0,19.6
+89,"Papa, pulpa sin cáscara, frita, bastón",162,2.9,6.2,23.6
+90,"Pepino, pulpa, fresco, crudo",15,0.7,0.1,2.7
+91,"Perejil, hoja, fresco, crudo",60,3.7,1.0,9.0
+92,"Piñon de araucaria, pepita, crudo",221,14.6,1.2,37.9
+93,"Pistacho, pepita, crudo",648,22.3,54.0,18.1
+94,"Poroto, semilla, seco, crudo",290,23.9,2.8,0.0
+95,"Poroto, semilla, enlatado",89,8.4,0.9,0.0
+96,"Puerro (bulbo, tallo y hojas), fresco, crudo",45,2.5,0.4,7.9
+97,"Quinua, semilla, cruda",354,13.8,5.1,63.3
+98,"Quinua, harina",341,4.4,1.0,78.7
+99,"Rabanito, raiz, fresco, crudo",29,1.3,0.1,5.8
+100,"Radicheta, hoja, fresco, cruda",0,2.2,0.0,0.0
+101,"Remolacha, tubérculo, fresca, cruda",54,2.4,0.0,11.1
+102,"Remolacha, tubérculo, hervida",36,1.0,0.0,7.9
+103,"Repollito Bruselas, hoja, fresco, crudo ",58,4.4,0.5,8.9
+104,"Repollo blanco, hoja, fresco, crudo",17,2.4,0.0,1.9
+105,"Repollo blanco, hoja, hervido",16,2.2,0.0,1.8
+106,"Salsifí, raiz, fresco, crudo",85,3.5,1.0,15.5
+107,"Soja, semilla madura, seca, cruda",356,34.6,24.2,0.0
+108,"Tapioca, cruda (harina mandioca)",336,2.0,0.0,82.0
+109,"Tapioca, hervida",55,0.1,0.0,13.7
+110,"Tomate, fresco, crudo",20,1.0,0.0,4.1
+111,"Tomate, hervido",21,1.0,0.0,4.2
+112,"Tomate, jugo, fresco",11,1.0,0.0,1.7
+113,"Verdolaga, hoja y tallo, fresca, cruda",23,1.6,0.4,3.3
+114,"Zanahoria, raiz, pelada, fresca",0,1.1,0.0,12.0
+115,"Zanahoria, raiz, pelada, hervida",0,0.0,0.0,0.0
+116,"Zanahoria, jugo, fresco",22,1.0,0.0,4.4
+117,"Zapallito, parte tierna, fresco, crudo",13,0.8,0.0,2.4
+118,"Zapallito, parte tierna, hervido ",16,1.3,0.0,2.8
+119,"Aceituna verde, pulpa, encurtida",144,1.5,13.5,4.0
+120,"Ananá, pulpa, fresco",58,0.4,0.2,13.7
+121,"Ananá enlatado, contenido envase",87,0.4,0.1,21.1
+122,"Banana, pulpa, fresca",99,1.2,0.2,23.0
+123,"Cereza, pulpa, fresca",68,1.1,0.5,14.8
+124,"Ciruela, pulpa, fresca",56,0.7,0.2,12.9
+125,"Ciruela, pasa, cruda",255,1.9,0.1,61.6
+126,"Ciruela, pasa, hervida",165,1.0,0.1,40.1
+127,"Coco, pulpa, fresco, crudo",382,3.4,34.7,14.0
+128,"Damasco, pulpa, fresco, crudo",57,1.0,0.1,12.9
+129,"Durazno, pulpa, fresco, crudo",51,0.5,0.1,12.0
+130,"Durazno, pulpa, envasado al natural",75,0.4,0.1,18.2
+131,"Durazno orejón, pulpa y piel, hervido",40,2.5,0.0,7.5
+132,"Frutilla pulpa, fresca, cruda",41,0.8,0.6,8.1
+133,"Granada, pulpa, fresca",75,0.6,0.2,17.7
+134,"Higo, pulpa, fresca",88,1.4,0.4,19.6
+135,"Kaki, pulpa, fresco",87,0.8,0.4,20.0
+136,"Kinoto, pulpa y cáscara, fresco, crudo",73,0.9,0.1,17.1
+137,"Limón, pulpa, fresco",44,0.9,0.6,8.7
+138,"Manzana, pulpa, fresca, cruda",64,0.3,0.4,14.9
+139,"Manzana, hervida",26,0.5,0.0,6.0
+140,"Melón, pulpa, fresco",28,0.6,0.2,5.9
+141,"Membrillo, pulpa, fresco, crudo",58,0.3,0.1,13.9
+142,"Mora, fresca",69,1.2,0.6,14.6
+143,"Palta, pulpa, fresca",258,1.7,26.4,3.3
+144,"Pera, pulpa, fresca, cruda",70,0.7,0.4,15.8
+145,"Pera, orejón, crudo",299,2.3,0.4,71.6
+146,"Pomelo, pulpa, fresco",26,0.5,0.0,5.9
+147,"Sandía, pulpa, fresca, cruda",31,0.5,0.2,6.9
+148,"Aceite comestible mezcla Lira, 85% girasol, 15% oliva",900,100.0,0.0,0.0
+149,"Aceite comestible mezcla Patito, 94% girasol, 6% maiz",900,100.0,0.0,0.0
+150,Aceite de canola,900,100.0,0.0,0.0
+151,Aceite de girasol Familiar,900,100.0,0.0,0.0
+152,Aceite de girasol Ideal,900,100.0,0.0,0.0
+153,Aceite de girasol Natura,900,100.0,0.0,0.0
+154,Aceite de maiz Arcor,900,100.0,0.0,0.0
+155,Aceite de maiz Cocinero,900,100.0,0.0,0.0
+156,Aceite de maiz Mazzola,900,100.0,0.0,0.0
+157,Aceite de oliva Cocinero,900,100.0,0.0,0.0
+158,Aceite de uva Cocinero,900,100.0,0.0,0.0
+159,Grasa de cerdo,898,99.8,0.0,0.0
+160,Grasa Vacuna,899,99.9,0.0,0.0
+161,Margarina 100% vegetal Manty (en pote y en pan),747,83.0,0.0,0.0
+162,Margarina 100% vegetal Delicia,747,83.0,0.0,0.0
+163,Margarina reducida en calorias Manty liviana,504,56.0,0.0,0.0
+164,"Abadejo, fresco, crudo, carne",72,15.8,0.9,0.2
+165,"Anchoa, fresca, cruda, carne",92,21.5,0.4,0.5
+166,"Anchoita, fresca, cruda, carne",129,19.2,5.4,0.8
+167,"Besugo, fresco, crudo, carne",100,20.4,2.0,0.0
+168,"Boga, fresca, cruda (carne entre aleta dorsal y ventral)",0,0.0,3.9,0.0
+169,"Bonito, fresco, crudo, carne",219,22.0,14.5,0.0
+170,"Brótola, fresca, cruda, carne",83,17.6,1.2,0.4
+171,"Caballa, fresca, cruda, carne",232,22.0,15.8,0.4
+172,"Castañeta, fresca, cruda, entera",170,17.0,11.1,0.5
+173,"Castañeta, fresca, cruda, carne",95,18.4,2.3,0.3
+174,"Congrio, fresco, crudo, carne",107,17.2,4.0,0.7
+175,"Cornalito, fresco, crudo, entero",86,16.0,2.2,0.6
+176,"Corvina blanca, fresca, cruda, carne",97,19.5,1.9,0.4
+177,"Corvina negra, fresca, cruda, carne",84,18.8,0.8,0.4
+178,"Dorado, fresco, crudo (carne entre aleta ventral y dorsal)",0,0.0,2.6,0.0
+179,"Dorado, fresco, crudo, carne",80,18.8,0.5,0.1
+180,"Gatuso, fresco, crudo, carne",72,17.4,0.2,0.1
+181,"Jurel, fresco, crudo, carne",149,19.0,8.0,0.2
+182,"Lenguado, fresco, crudo, carne",78,17.5,0.8,0.2
+183,"Lisa, fresca, cruda, carne",146,17.9,7.8,1.1
+184,"Merluza, fresca, cruda, carne",81,17.1,1.3,0.1
+185,"Mero, fresco, crudo, carne",83,17.9,1.0,0.5
+186,"Palometa, fresca, cruda, carne",215,20.1,14.8,0.4
+187,"Pargo, fresco, crudo, carne",113,19.1,3.9,0.3
+188,"Patí, fresco, crudo (carne entre dorsal y ventral)",0,0.0,3.4,0.0
+189,"Patí, fresco, crudo, carne",90,18.2,1.8,0.3
+190,"Pejerrey agua dulce, fresco, crudo, carne",77,18.3,0.4,0.0
+191,"Pejerrey mar, fresco, crudo, carne",86,18.6,1.2,0.2
+192,"Pescadilla, fresca, crudo, carne",97,17.8,2.8,0.2
+193,"Pez Gallo, fresco, crudo, carne",84,20.2,0.4,0.0
+194,"Pez palo, fresco, crudo, carne",96,20.1,1.7,0.0
+195,"Rubio, fresco, crudo, carne",109,17.1,4.5,0.0
+196,"Sardina fueguina, fresca, cruda, carne",136,14.0,8.9,0.0
+197,"Surubí, fresco, crudo, carne zona ventral",0,0.0,1.7,0.0
+198,"Surubí, fresco, crudo, carne zona dorsal",0,0.0,0.9,0.0
+199,"Surubí, fresco, crudo, carne",110,18.2,4.0,0.2
+200,"Tararira, fresca, cruda, carne",79,18.1,0.6,0.4
+201,"Testolin, fresco, crudo, carne",98,18.9,2.4,0.2
+202,"Calamar, fresco, entero, crudo",80,18.5,0.7,0.0
+203,"Calamar, fresco, crudo (tubo aletas y tentáculos)",79,18.4,0.6,0.0
+204,"Camarón, fresco, crudo, carne de cola",91,21.0,0.8,0.0
+205,"Centolla, fresca, carne, cruda",66,13.9,1.1,0.0
+206,"Centolla, fresca (carne de pata solamente)",83,18.8,0.8,0.0
+207,"Langostino, fresco, crudo, carne de cola",97,22.0,0.9,0.2
+208,"Mejillón, fresco, crudo, carne",64,11.9,1.1,1.7
+209,"Mejillón, fresco, crudo (capturado en primavera)",95,17.6,1.6,2.5
+210,"Mejillón, fresco, pre-cocido, carne",84,21.1,0.0,0.0
+211,"Ancho, pasta",202,20.2,11.6,4.3
+212,"Caballa, tronco",212,26.5,11.8,0.0
+213,"Cerdo, costilla flaca, cruda",250,19.9,18.9,0.0
+214,"Cerdo, costilla, a la parrilla",320,25.2,24.3,0.0
+215,"Cerdo, jamón crudo",473,18.0,44.6,0.0
+216,"Cerdo, jamón cocido",211,20.3,14.4,0.0
+217,"Cerdo, panceta",670,8.3,70.8,0.0
+218,"Cerdo, chorizo, fresco, crudo",454,13.0,44.2,1.1
+219,"Cordero, carne de la paleta, crudo",99,18.7,2.7,0.0
+220,"Cordero, carne de la paleta, flaca, a la parrilla",182,28.0,7.8,0.0
+221,"Pollo, carne-pellejo-menudos, fresco, crudo",88,16.3,2.5,0.0
+222,"Pollo, hervido",198,23.1,11.7,0.0
+223,"Pollo, asado al horno",162,28.4,5.4,0.0
+224,"Pollo, asado a la parrilla",168,29.8,5.4,0.0
+225,"Rana, carne de la pata, fresca, cruda",64,15.5,0.2,0.0
+226,"Vacuno, asado, fresco, crudo",170,18.4,10.7,0.0
+227,"Vacuno, bife, a la parrilla",189,24.6,10.1,0.0
+228,"Vacuno, caracú (médula de hueso largo), crudo",785,0.5,87.0,0.0
+229,"Vacuno, cuadril y bife angosto flaco, fresco, crudo",111,21.0,3.0,0.0
+230,"Vacuno, en conserva, enlatado",224,23.7,14.4,0.0
+231,"Vacuno, hígado, crudo",132,19.7,3.2,6.0
+232,"Vacuno, jugo de carne",33,6.8,0.6,0.0
+233,"Vacuno, lomo, fresco, crudo",116,20.0,4.0,0.0
+234,"Vacuno, nalga, fresco, crudo",97,21.2,1.4,0.0
+235,"Vacuno, pasta de hígado",335,14.0,31.0,0.0
+236,"Vacuno, riñon, fresco, crudo",137,15.0,8.1,0.9
+237,"Vacuno, ternera, costilla flaca, a la parrilla",139,27.2,3.4,0.0
+238,"Vacuno, ternera, costilla flaca, fresco, crudo",95,20.0,1.7,0.0
+239,"Vacuno, vacío flaco, fresco, crudo",171,23.8,8.4,0.0
+240,"Vacuno, vacío, a la parrilla",258,25.6,17.3,0.0
+241,"Vacuno, vacío, al horno",241,28.1,14.3,0.0
+242,"Bife caribu, cocido",233,36.0,9.9,0.1
+243,"Bife caribu, crudo",120,20.7,2.2,4.3
+244,"Nalga caribu, cocida",197,38.6,4.4,0.7
+245,"Nalga caribu, cruda",98,19.5,0.0,4.9
+246,"Paleta caribu, cocida",207,37.0,6.4,0.4
+247,"Paleta caribu, cruda",107,19.0,3.4,0.2
+248,"Vacío caribu, cocido",231,41.1,6.8,1.2
+249,"Vacío caribu, crudo",105,18.4,2.2,3.1
+250,"Bife criollo, cocido",236,36.5,9.8,0.3
+251,"Bife criollo, crudo",120,21.1,2.5,3.2
+252,"Nalga criollo, cocida",177,35.1,3.8,0.6
+253,"Nalga criollo, cruda",103,21.0,1.1,2.5
+254,"Paleta criollo, cocida",192,35.5,5.2,0.9
+255,"Paleta criollo, cruda",106,18.4,2.7,2.0
+256,"Vacío criollo, cocido",203,38.4,5.0,1.2
+257,"Vacío criollo, crudo",107,18.4,2.5,2.7
+296,"Leche de burra, entera, fluida",45,1.9,1.4,6.2
+297,"Leche de cabra, entera, fluida",78,3.3,5.9,3.0
+298,"Leche de oveja, entera, fluida",99,5.5,6.5,4.5
+299,"Leche humana, entera, fluida",71,1.1,4.2,7.1
+300,"Leche humana, entera, en polvo",520,9.6,31.5,49.5
+301,"Leche de vaca, entera, fluida, pasteurizada",57,3.1,2.9,4.6
+302,"Leche de vaca, entera, fluida, adicionada con vitamina A",57,3.1,2.9,4.6
+430,"Zapallo, pulpa, fresco, crudo",27,0.5,0.2,5.8
+303,"Leche de vaca parcialm. descremada, adic. con vit A y D",44,3.2,1.4,4.6
+304,Leche en polvo entera,489,25.8,24.8,40.9
+305,Leche en polvo descremada,370,35.5,1.0,52.2
+306,"Leche, condensada, Nestlé",328,8.0,8.1,55.8
+307,"Manteca, fresca",758,0.5,84.0,0.0
+308,"Queso crema, entero, untable ",246,6.6,22.6,3.9
+309,"Queso semidescremado, untable",104,11.5,4.0,5.5
+310,"Queso descremado, untable",82,13.7,0.3,6.1
+311,"Queso, Petit Suisse",182,14.1,14.0,0.0
+312,Queso Belpaese,309,20.3,25.3,0.0
+313,Queso Camembert,287,20.1,23.0,0.0
+314,Queso mozarella,282,23.6,19.3,3.3
+315,Queso cremoso,302,19.7,22.9,4.2
+316,Queso cuartirolo,291,20.8,21.4,3.9
+317,Queso doble crema,260,18.0,20.9,0.0
+318,Queso Limburgués,324,21.8,26.3,0.0
+319,Queso Por Salut,301,20.4,22.7,3.7
+320,Queso Cheddar,357,29.5,26.5,0.0
+321,Queso Chubut,328,25.9,24.9,0.0
+322,Queso Fontina,340,24.3,33.6,0.0
+323,Queso Gorgonzola,480,21.6,43.7,0.0
+324,Queso Gruyere,379,28.6,29.4,0.0
+325,Queso Holanda,345,25.1,27.2,0.0
+326,Queso Pategrás,410,24.8,34.5,0.0
+327,Queso Roquefort,426,19.2,38.8,0.0
+328,Queso Suizo,404,28.6,31.3,1.9
+329,Queso Tafí,358,21.8,30.1,0.0
+330,Queso Tandil,345,25.5,27.0,0.0
+331,Queso tipo Mar del Plata  ,332,25.4,25.6,0.0
+332,Queso Goya,402,29.7,31.5,0.0
+333,Queso Parmesano,350,32.7,24.4,0.0
+334,Queso Provolone,391,32.1,29.2,0.0
+335,Queso Reggianito,365,33.4,24.2,3.4
+336,Queso Sardo,402,30.0,29.1,5.0
+337,Queso Sbrinz,357,29.4,26.6,0.0
+338,Ricota de leche entera,168,11.6,11.8,4.0
+339,Yogur entero natural,66,4.6,3.0,5.3
+340,Yogur entero saborizado,88,4.4,2.4,12.4
+341,Yogur descremado,59,4.3,0.2,5.9
+342,Yogur entero bebible,82,2.8,2.2,12.7
+343,Yogur descremado bebible,30,3.3,0.1,4.1
+344,"Huevo de gallina, entero, crudo",156,12.0,11.8,0.4
+345,"Huevo de gallina, clara, cruda",48,11.6,0.2,0.0
+346,"Huevo de gallina, yema, cruda",325,16.6,28.7,0.0
+347,"Huevo de gallina, clara, cocido",54,12.8,0.3,0.0
+348,"Huevo de gallina, frito",196,16.3,14.5,0.0
+349,"Huevo de gallina, poché",152,13.4,10.9,0.0
+350,"Huevo de codorniz, entero, crudo",174,13.6,13.3,0.1
+351,"Batata, dulce",263,0.9,0.1,65.0
+352,"Ciruela, mermelada",306,3.7,0.2,73.1
+353,Chocolatín,549,5.4,31.5,62.4
+354,"Durazno, mermelada",304,3.5,0.1,76.4
+355,"Frutilla, mermelada",309,3.8,0.6,73.2
+356,"Leche, dulce de leche",341,8.1,9.0,56.8
+395,"Amarillo, fresco, crudo, músculo dorsal",141,17.3,8.0,0.0
+396,"Amarillo, fresco, hervido, músculo dorsal",180,18.7,11.7,0.0
+397,"Amarillo, fresco, al horno, músculo dorsal",233,19.9,17.0,0.0
+398,"Amarillo, fresco, a la parrilla, músculo dorsal",183,21.3,10.9,0.0
+399,"Amarillo, fresco, frito, músculo dorsal",232,22.8,15.6,0.0
+400,"Armado, fresco, crudo, músculo dorsal",75,15.4,1.5,0.0
+401,"Armado, fresco, crudo, músculo ventral",103,14.6,4.9,0.0
+402,"Armado, fresco, hervido, músculo dorsal",102,20.8,2.1,0.0
+403,"Armado, fresco, al horno, músculo dorsal",128,23.7,3.7,0.0
+404,"Armado, fresco, frito, músculo dorsal",130,21.4,4.9,0.0
+405,"Boga, fresca, cruda, músculo ventral",180,18.5,11.8,0.0
+406,"Boga, fresca, hervida, músculo dorsal",158,22.7,7.5,0.0
+407,"Boga, fresca, al horno, músculo dorsal",150,25.1,5.5,0.0
+408,"Boga, fresca, a la parrilla, músculo dorsal",150,23.7,6.1,0.0
+409,"Boga, fresca, frita, músculo dorsal",168,24.3,7.9,0.0
+410,"Moncholo, fresco, crudo, músculo dorsal",112,17.5,4.7,0.0
+411,"Moncholo, fresco, crudo, músculo ventral",148,16.7,9.1,0.0
+412,"Moncholo, fresco, hervido, músculo dorsal",187,16.7,13.3,0.0
+413,"Moncholo, fresco, al horno, músculo dorsal",189,22.0,11.3,0.0
+414,"Patí, fresco, hervido, músculo dorsal",133,19.6,6.1,0.0
+415,"Patí, fresco, al horno, músculo dorsal",183,20.6,11.2,0.0
+416,"Patí, fresco, a la parrilla, músculo dorsal",169,22.6,8.8,0.0
+417,"Patí, fresco, frito, músculo dorsal",215,23.0,13.6,0.0
+418,"Sábalo, fresco, crudo, músculo dorsal",145,18.0,8.1,0.0
+419,"Sábalo, fresco, crudo, músculo ventral",151,17.5,9.0,0.0
+420,"Sábalo, fresco, hervido, músculo dorsal",130,20.5,5.3,0.0
+421,"Sábalo, fresco, al horno, músculo dorsal",153,25.1,5.8,0.0
+422,"Sábalo, fresco, a la parrilla, músculo dorsal",130,23.4,4.0,0.0
+423,"Sábalo, fresco, frito, músculo dorsal",166,24.9,7.4,0.0
+424,"Surubí, fresco, crudo, músculo dorsal",187,17.6,13.0,0.0
+425,"Surubí, fresco, hervido, músculo dorsal",186,23.4,10.3,0.0
+426,"Surubí, fresco, al horno, músculo dorsal",255,23.5,17.9,0.0
+427,"Surubí, fresco, frito, músculo dorsal",269,26.7,18.0,0.0
+428,"Patí, fresco, crudo, músculo dorsal",161,15.9,10.8,0.0
+429,"Patí, fresco, crudo, músculo ventral",159,15.2,10.9,0.0
+431,"Zapallo, pulpa, hervido",20,0.4,0.0,4.6
+432,Yogur descremado fortificado con Ca,48,4.6,0.1,7.1
+482,"Maiz, blanco perla, grano entero, crudo",335,9.0,0.9,74.8
+483,"Amaranto, semilla, cruda (Amarantus mantegazzianus)",388,15.4,8.4,62.7
+484,"Amaranto, semilla, cruda (Amarantus caudatus)",384,15.3,7.6,63.6
+485,"Amaranto, semillia, cruda (Amarantus cruentus)",384,15.6,7.6,63.4
+486,"Amaranto, semilla, cruda (Amarantus hipochondriacus)",381,14.4,7.4,64.3
+487,"Maiz, blanco 8 rayas, grano entero, crudo",340,7.3,0.9,77.7
+488,"Maiz, amarillo Leales, grano entero, crudo",346,10.6,0.8,74.1
+489,"Maiz, amarillo trópico 327, grano entero, crudo  ",344,9.8,1.1,73.6
+490,"Maiz amarillo, pisingallo, grano entero, crudo",345,10.9,0.5,74.6
+491,"Maiz amarillo, sémola, grano entero, crudo",305,9.0,1.1,76.4
+492,"Lupino andino, con cáscara, semilla, crudo",399,37.8,10.0,39.5
+493,"Lupino andino, sin cáscara, semilla, crudo",411,38.4,11.6,38.3
+494,"Acelga, hoja",15,2.9,0.2,0.0
+495,"Acelga, tallo",8,1.2,0.1,0.0
+496,Aceituna de monte,93,1.6,0.4,19.4
+497,"Guaraniná, Brumelia obtusifolia",147,1.6,3.2,23.7
+498,Achira (raíces),34,1.7,0.2,7.9
+499,Achicoria de Monte,46,2.8,1.2,7.7
+500,"Verdolaga, hoja",32,2.4,0.5,5.7
+501,"Mastuerzo, hoja",50,3.7,1.4,8.1
+502,Ñandapirí,70,1.7,0.7,14.3
+503,"Vacuno, bife angosto c/c de novillito, fresco, crudo",190,21.0,12.0,0.0
+504,"Vacuno, bola de lomo de novillito, fresco, crudo",114,22.0,3.2,0.0
+505,"Vacuno, brazuelo de novillito, fresco, crudo",120,21.0,3.9,0.0
+506,"Vacuno, colita de cuadril de novillito, fresco, crudo",143,21.0,6.7,0.0
+507,"Vacuno, corazón de cuadril de novillito, fresco, crudo",116,22.0,2.6,0.0
+510,"Vacuno, nalga de novillito, fresco, crudo",106,22.0,1.7,0.0
+511,"Vacuno, paleta de novillito, fresco, crudo",125,19.0,5.5,0.0
+512,"Vacuno, paletín o marucha de novillito, fresco, crudo",132,20.0,6.1,0.0
+513,"Vacuno, palomita de novillito, fresco, crudo",116,20.0,3.7,0.0
+514,"Vacuno, peceto de novillito, fresco, crudo",125,23.0,1.9,0.0
+515,"Vacuno, pecho de novillito, fresco, crudo",139,20.0,6.5,0.0
+516,"Vacuno, tortuguita de novillito, fresco, crudo",154,22.0,7.6,0.0
+517,"Vacuno, vacío de novillito, fresco, crudo",174,20.0,11.0,0.0
+521,"Vacuno, tapa de cuadril de novillito, fresco, crudo",211,20.0,15.0,0.0
+522,"Jamon cocido ""Villafranca Novissimo"".El Bierzo. Reducido en colesterol",98,18.0,2.5,0.0
+523,"Lomo ahumado de cerdo cocido ""Villafranca Novissimo"". El Bierzo. Reducido en sodio y en colesterol",95,19.0,2.0,0.0
+524,"Mortadela"" Villafranca Novissimo"". El Bierzo - reducida en grasa y en sodio",139,16.0,5.7,0.0
+525,"Pastron ahumado ""Villafranca Novissimo"". El Bierzo. Reducido en sodio y en colesterol",79,16.0,0.4,0.0
+526,"Salame ""Villafranca Novissimo"".El Bierzo.Reducido en sodio y en colesterol",134,22.0,4.6,0.0
+528,"Poroto Alubia, semilla, seco",337,19.8,0.8,62.8
+529,"Poroto Colorado, semilla, seco",333,19.6,1.2,61.0
+530,"Poroto Carioca, semilla, seco",336,20.0,0.9,62.0
+531,"Poroto Grand Berry, semilla, seco",336,21.5,1.0,60.4
+532,"Poroto Great Northern, semilla, seco",326,21.0,0.5,60.6
+533,"Poroto Negro, semilla, seco",306,20.6,1.0,61.5
+534,"Poroto Novy Bean, semilla, seco",336,26.0,1.1,55.6
+535,"Poroto Oval, semilla, seco",328,18.2,1.1,63.7
+536,"Poroto Pallares, semilla, seco",322,16.6,0.6,63.3
+537,"Poroto Small Red, semilla, seco",336,25.3,0.8,56.7
+538,"Soja FT11, poroto seco",368,36.9,6.8,39.8
+539,"Diente de león, hoja",33,2.6,0.4,6.6
+540,"Lengua de vaca, hojas, tejido fresco, parte comestible",43,3.1,0.8,7.6
+541,"Yuyo colorado, hoja",60,4.1,0.7,11.1
+542,Doca,49,1.6,1.0,11.5
+543,Mburucuyá verde,59,3.2,1.6,15.7
+544,Mburucuyá maduro,84,4.7,1.7,23.4
+545,Ubajay,49,1.1,1.6,8.1
+546,Dulce de Leche Light,260,6.2,1.6,52.9
+547,Dulce de leche repostero suelto,337,5.3,7.9,7.9
+548,Dulce de leche para reposteria,317,7.3,7.5,55.0
+549,Dulce de leche,314,6.5,6.6,57.4
+550,Queso azul,377,20.0,31.1,4.3
+551,Ricotta semidescremada,168,11.6,11.7,4.0
+552,Queso  Blanco Argentino Semimagro ,104,11.5,4.0,5.6
+553,"Vacuno, hamburguesas crudas",218,17.3,16.5,0.0
+554,"Vacuno, hamburguesas cocidas",248,20.5,18.4,0.0
+555,"Vacuno, hamburguesas light crudas",175,18.4,11.3,0.0
+556,"Vacuno, hamburguesas light cocidas",199,21.0,12.8,0.0
+557,Carne de vizcacha,46,23.9,3.7,7.7
