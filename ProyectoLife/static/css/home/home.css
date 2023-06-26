@@ -72,7 +72,8 @@ main{
 
 .second_section{
     background: transparent;
-    display: flex;
+    /*display: flex;*/
+    display: none;
     flex-direction: row;
     margin-top: 30px;
     margin-bottom: 30px;
