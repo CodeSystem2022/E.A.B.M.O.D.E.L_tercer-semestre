@@ -4,14 +4,20 @@ let activeChartId = null;
 
 function chart_visibility(chartId) {
     let chartContainer = document.getElementById(chartId);
-    let allChartContainers = document.querySelectorAll(".canvas-container");
+    let allChartContainers;
+
+    if(chartId == "canvas-container_one" || chartId == "canvas-container_two" || chartId == "canvas-container_three"){
+        allChartContainers = document.querySelectorAll(".canvas-container");
+    };
 
     if (activeChartId === chartId) {
         chartContainer.style.display = "none";
         activeChartId = null;
     }else{
-        for (let i = 0; i < allChartContainers.length; i++) {
-            allChartContainers[i].style.display = "none";
+        if(chartId == "canvas-container_one" || chartId == "canvas-container_two" || chartId == "canvas-container_three"){
+            for (let i = 0; i < allChartContainers.length; i++) {
+                allChartContainers[i].style.display = "none";
+            };
         };
 
         chartContainer.style.display = "block";
@@ -27,4 +33,13 @@ document.getElementById("second_section_row_second").addEventListener("click", f
 });
 document.getElementById("second_section_row_third").addEventListener("click", function() {
     chart_visibility("canvas-container_three");
+});
+document.querySelector("#first_form").addEventListener("click", function() {
+    chart_visibility("form-imc");
+});
+document.querySelector("#second_form").addEventListener("click", function() {
+    chart_visibility("form-test1");
+});
+document.querySelector("#third_form").addEventListener("click", function() {
+    chart_visibility("form-test2");
 });

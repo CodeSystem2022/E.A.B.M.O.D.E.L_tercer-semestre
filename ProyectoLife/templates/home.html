@@ -41,6 +41,20 @@
         </nav>
     </header>
 
+    <div class="menu-container">
+        <nav class="vertical-menu">
+            <ul>
+                <li class="menu-item">
+                    <a href="#">Formularios</a>
+                    
+                </li>
+                <li class="menu-item">
+                    <a href="#">Graficos</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
     <main class="container">
 
         <section class="first_section">
@@ -56,115 +70,188 @@
             </div>
         </section>
 
-        <section class="second_section">
-
-                <article id="second_section_row_first">
-                    <article id="second_section_row_first_columns">
-                        <h3 class="completedTasks">         
-                            20
-                        </h3>
-                        <h3 class="completedTasksText">
-                            CALORIAS CONSUMIDAS 
-                        </h3>
-                        <p>Check your completed tasks in a closer way!</p>
-                    </article>
-                    <div class="completedTasksIco">
-                        <span class="material-icons-outlined">
-                            task_alt
-                        </span>
-                    </div>
-                </article>
-
-                <article class="second_section_row_second" id="second_section_row_second">
-                    <article id="second_section_row_second_first_columns">
-                        <h3 class="pendingTasks">
-                            20
-                        </h3>
-                        <h3 class="pendingTasksText">Calorias Quemadas</h3>
-                        <p>Check your pending tasks in a closer way!</p>
-                    </article>
-                    <div class="pendingTasksIco">
-                        <span class="material-icons-outlined">
-                            info
-                        </span>
-                    </div>
-                </article>
-
-                <article class="second_section_row_third" id="second_section_row_third">
-                    <article id="second_section_row_second_third_columns">
-                        <h3 class="incompleteTasks">
-                            20 
-                        </h3>
-                        <h3 class="incompleteTasksText">INCOMPLETE TASKS</h3>
-                        <p>Check your incomplete tasks in a closer way!</p>
-                    </article>
-                    <div class="incompleteTasksIco">
-                        <span class="material-icons-outlined">
-                            highlight_off
-                        </span>
-                    </div>
-                </article>
-        </section>
-
         <section class="three_section">
 
-            
-            <form method="POST" id="form-imc" action="">
-                <article class="article-form-cal">
+            <div>
+                <article class="article-form-cal" id="first_form">
                     <h1>Calcular <span>IMC</span></h1>
                     <p>Para un cálculo correcto necesitamos algo de información básica sobre ti</p>
                 </article>
+                <article class="article-form-cal" id="second_form">
+                    <h1>Calcular <span>IMC</span></h1>
+                    <p>Para un cálculo correcto necesitamos algo de información básica sobre ti</p>
+                </article>
+                <article class="article-form-cal" id="third_form">
+                    <h1>Calcular <span>IMC</span></h1>
+                    <p>Para un cálculo correcto necesitamos algo de información básica sobre ti</p>
+                </article>
+            </div>
 
-                <div class="container-form">
-                    <div class="form-group">
-                        <article class="form-option-gender">
-                            <label>¿Cuál es tu género?</label>
-                            <div class="mt-16">
-                                <div class="icn-btn-wrapper" id="gender-icn-btn-wrapper">
-                                <label for="male">
-                                    <div class="img-btn-container">
-                                    <img class="icon-svg" src="../static/img/form/hombre.png" alt="Hombre" type="image/svg+xml">
-                                        Hombre
+
+
+            <div id="form-imc">
+                <form method="POST" action="">
+                    <div class="container-form">
+                        <div class="form-group">
+                            <article class="form-option-gender">
+                                <label>¿Cuál es tu género?</label>
+                                <div class="mt-16">
+                                    <div class="icn-btn-wrapper" id="gender-icn-btn-wrapper">
+                                    <label for="male">
+                                        <div class="img-btn-container">
+                                        <img class="icon-svg" src="../static/img/form/hombre.png" alt="Hombre" type="image/svg+xml">
+                                            Hombre
+                                        </div>
+                                        <input type="radio" id="male" name="gender" value="male" hidden>
+                                    </label>
+                                    <label for="female">
+                                        <div class="img-btn-container">
+                                        <img class="icon-svg" src="../static/img/form/mujer.png" alt="Mujer" type="image/svg+xml">
+                                            Mujer
+                                        </div>
+                                        <input type="radio" id="female" name="gender" value="female" hidden>
+                                    </label>
                                     </div>
-                                    <input type="radio" id="male" name="gender" value="male" hidden>
-                                </label>
-                                <label for="female">
-                                    <div class="img-btn-container">
-                                    <img class="icon-svg" src="../static/img/form/mujer.png" alt="Mujer" type="image/svg+xml">
-                                        Mujer
-                                    </div>
-                                    <input type="radio" id="female" name="gender" value="female" hidden>
-                                </label>
                                 </div>
-                            </div>
+                            </article>
+
+                            <article class="form-option-date">
+                                <label>¿Cuál es tu edad?</label>
+                                <article>
+                                    <input type="date">
+                                </article>
+                            </article>
+                        </div>
+                    
+                    <div class="form-group">
+                        <article class="form-option-date">
+                            <label>¿Cuánto mides?</label>
+                            <article>
+                                <input type="text" placeholder="180">
+                            </article>
                         </article>
 
                         <article class="form-option-date">
-                            <label>¿Cuál es tu edad?</label>
+                            <label>¿Cuánto pesas?</label>
                             <article>
-                                <input type="date">
+                                <input type="text" placeholder="60">
                             </article>
                         </article>
+
+                        </div>
                     </div>
-                
-                <div class="form-group">
-                    <article class="form-option-date">
-                        <label>¿Cuánto mides?</label>
-                        <article>
-                            <input type="text" placeholder="180">
+
+                </form>
+            </div>
+
+            <div id="form-test1">
+                <form method="POST" action="">
+                    <div class="container-form">
+                        <div class="form-group">
+                            <article class="form-option-gender">
+                                <label>¿Cuál es tu género?</label>
+                                <div class="mt-16">
+                                    <div class="icn-btn-wrapper" id="gender-icn-btn-wrapper">
+                                    <label for="male">
+                                        <div class="img-btn-container">
+                                        <img class="icon-svg" src="../static/img/form/hombre.png" alt="Hombre" type="image/svg+xml">
+                                            Hombre
+                                        </div>
+                                        <input type="radio" id="male" name="gender" value="male" hidden>
+                                    </label>
+                                    <label for="female">
+                                        <div class="img-btn-container">
+                                        <img class="icon-svg" src="../static/img/form/mujer.png" alt="Mujer" type="image/svg+xml">
+                                            Mujer
+                                        </div>
+                                        <input type="radio" id="female" name="gender" value="female" hidden>
+                                    </label>
+                                    </div>
+                                </div>
+                            </article>
+            
+                            <article class="form-option-date">
+                                <label>¿Cuál es tu edad?</label>
+                                <article>
+                                    <input type="date">
+                                </article>
+                            </article>
+                        </div>
+                    
+                    <div class="form-group">
+                        <article class="form-option-date">
+                            <label>¿Cuánto mides?</label>
+                            <article>
+                                <input type="text" placeholder="180">
+                            </article>
                         </article>
-                    </article>
-
-                    <article class="form-option-date">
-                        <label>¿Cuánto pesas?</label>
-                        <article>
-                            <input type="text" placeholder="60">
+            
+                        <article class="form-option-date">
+                            <label>¿Cuánto pesas?</label>
+                            <article>
+                                <input type="text" placeholder="60">
+                            </article>
                         </article>
-                    </article>
-
-                </div>
-
-            </form>
+            
+                        </div>
+                    </div>
+            
+                </form>
+            </div>
+            <div id="form-test2">
+                <form method="POST" action="">
+                    <div class="container-form">
+                        <div class="form-group">
+                            <article class="form-option-gender">
+                                <label>¿Cuál es tu género?</label>
+                                <div class="mt-16">
+                                    <div class="icn-btn-wrapper" id="gender-icn-btn-wrapper">
+                                    <label for="male">
+                                        <div class="img-btn-container">
+                                        <img class="icon-svg" src="../static/img/form/hombre.png" alt="Hombre" type="image/svg+xml">
+                                            Hombre
+                                        </div>
+                                        <input type="radio" id="male" name="gender" value="male" hidden>
+                                    </label>
+                                    <label for="female">
+                                        <div class="img-btn-container">
+                                        <img class="icon-svg" src="../static/img/form/mujer.png" alt="Mujer" type="image/svg+xml">
+                                            Mujer
+                                        </div>
+                                        <input type="radio" id="female" name="gender" value="female" hidden>
+                                    </label>
+                                    </div>
+                                </div>
+                            </article>
+            
+                            <article class="form-option-date">
+                                <label>¿Cuál es tu edad?</label>
+                                <article>
+                                    <input type="date">
+                                </article>
+                            </article>
+                        </div>
+                    
+                    <div class="form-group">
+                        <article class="form-option-date">
+                            <label>¿Cuánto mides?</label>
+                            <article>
+                                <input type="text" placeholder="180">
+                            </article>
+                        </article>
+            
+                        <article class="form-option-date">
+                            <label>¿Cuánto pesas?</label>
+                            <article>
+                                <input type="text" placeholder="60">
+                            </article>
+                        </article>
+            
+                        </div>
+                    </div>
+            
+                </form>
+            </div>
 
             <!---form 1
             <form method="POST" id="form-calorias-quemadas" action="">
@@ -189,8 +276,58 @@
             </form>
             -->
 
+            
 
+        </section>
 
+        <section class="second_section">
+
+            <article id="second_section_row_first">
+                <article id="second_section_row_first_columns">
+                    <h3 class="completedTasks">         
+                        20
+                    </h3>
+                    <h3 class="completedTasksText">
+                        CALORIAS CONSUMIDAS 
+                    </h3>
+                    <p>Check your completed tasks in a closer way!</p>
+                </article>
+                <div class="completedTasksIco">
+                    <span class="material-icons-outlined">
+                        task_alt
+                    </span>
+                </div>
+            </article>
+
+            <article class="second_section_row_second" id="second_section_row_second">
+                <article id="second_section_row_second_first_columns">
+                    <h3 class="pendingTasks">
+                        20
+                    </h3>
+                    <h3 class="pendingTasksText">Calorias Quemadas</h3>
+                    <p>Check your pending tasks in a closer way!</p>
+                </article>
+                <div class="pendingTasksIco">
+                    <span class="material-icons-outlined">
+                        info
+                    </span>
+                </div>
+            </article>
+
+            <article class="second_section_row_third" id="second_section_row_third">
+                <article id="second_section_row_second_third_columns">
+                    <h3 class="incompleteTasks">
+                        20 
+                    </h3>
+                    <h3 class="incompleteTasksText">INCOMPLETE TASKS</h3>
+                    <p>Check your incomplete tasks in a closer way!</p>
+                </article>
+                <div class="incompleteTasksIco">
+                    <span class="material-icons-outlined">
+                        highlight_off
+                    </span>
+                </div>
+            </article>
         </section>
 
     </main>

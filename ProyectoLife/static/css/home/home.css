@@ -78,8 +78,16 @@ main{
     margin-bottom: 30px;
     justify-content: space-evenly;
     margin-right: 10px;
-    
 }
+body > main > section.second_section > article{
+    margin: 10px 10px;
+    width: 250px;
+    height: 350px;
+}
+body > main > section.second_section > article:hover {
+    cursor: pointer;
+}
+
 /*modified after 750px*/
 /*modificados seccion 1,2,3 su width a fit content en lugar de 500px*/
 @media screen and (max-width: 750px){
@@ -94,10 +102,8 @@ main{
     color: azure;
     flex-direction: row;
     display: flex; 
-    width: fit-content;
     border-radius: 10px;
     padding: 20px;
-    margin-bottom: 30px;
     border-left: #4E9F3D 2px solid;
     border-bottom: #4E9F3D 2px solid;
 }
@@ -145,7 +151,6 @@ main{
     color: azure;
     flex-direction: row;
     display: flex;
-    width: fit-content;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 30px;
@@ -190,7 +195,6 @@ main{
     color: azure;
     flex-direction: row;
     display: flex;
-    width: fit-content;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 30px;
@@ -239,7 +243,85 @@ main{
 
 
 /*seccion tres*/
+/*erwin tocando cositas*/
+/* Estilos del menú vertical */
+.menu-container {
+    position: fixed;
+    left: 0;
+    top: 74px;
+    bottom: 0;
+    width: 80px;
+    background-color: #161616;
+}
 
+.vertical-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.vertical-menu ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 15px;
+    padding: 0;
+    align-self: center;
+}
+
+.vertical-menu li {
+    margin-bottom: 35px;
+}
+
+.vertical-menu li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.vertical-menu ul li a {
+    display: block;
+    writing-mode: vertical-lr;
+    text-orientation: sideways-right;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.vertical-menu li a:hover {
+    background-color: #9cc670;
+}
+
+/* Ajustes de posicionamiento del contenido principal */
+.container {
+    margin-left: 100px;
+}
+
+body > main > section.three_section > div{
+    width: 100vw;
+    background-color: #161616;
+    display: flex;
+    justify-content: space-evenly;
+}
+@media screen and (max-width:780px){
+    body > main > section.three_section > div{
+        display: grid;
+        margin: 20px 0;
+    }
+}
+body > main > section.three_section > div > article{
+    max-width: 250px;
+    background-color: black;
+    margin: 10px 0px;
+    border-left: #7ec670 2px solid;
+    border-bottom: #7ec670 2px solid;
+    color: azure;
+    border-radius: 10px;
+    padding: 20px;
+}
+body > main > section.three_section > div > article:hover{
+    cursor: pointer;
+}
 
 .three_section{
     display: flex;
@@ -263,13 +345,23 @@ main{
     margin-bottom: 20px;
 }
 
+#form-imc{
+    display: flex;
+    background-color: black;
+}
+#form-test1, #form-test2{
+    display: none;
+    background-color: black;
+}
+
+
 form{
     display: flex;
-   flex-direction: column;
-   width: 100%;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
    
 }
 
