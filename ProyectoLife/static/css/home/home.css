@@ -241,11 +241,9 @@ body > main > section.second_section > article:hover {
 
 
 
-
-
 /*seccion tres*/
 /*erwin tocando cositas*/
-/* Estilos del menú vertical */
+/* Estilos del menÃº vertical */
 .menu-container {
     position: fixed;
     left: 0;
@@ -332,6 +330,8 @@ body > main > section.three_section > div > article:hover{
     cursor: pointer;
 }
 
+
+
 .three_section{
     display: flex;
     flex-direction: column;
@@ -339,6 +339,10 @@ body > main > section.three_section > div > article:hover{
     padding-top: 30px;
     padding-bottom: 30px;
     width: 100%;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+   
 }
 .three_section h1{
     font-size: 30px;
@@ -354,10 +358,6 @@ body > main > section.three_section > div > article:hover{
     margin-bottom: 20px;
 }
 
-#form-imc{
-    display: flex;
-    background-color: #0f0f0f;
-}
 #form-test1, #form-test2{
     display: none;
     background-color: #0f0f0f;
@@ -405,6 +405,8 @@ label{
 .container-form{
     width: 650px;
   }
+
+
   .form-group{
     display:flex;
     flex-direction: row;
@@ -415,7 +417,6 @@ label{
 
 
 .article-form-cal{
-    background-color: #161616;
     width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -426,9 +427,13 @@ label{
     width: 300px;
     border-radius: 10px;
     border-left: #9cc670
-    2px solid;
+    3px solid;
     border-bottom: #9cc670
-    2px solid;
+    3px solid;
+    border-top: #9cc670
+    1px solid;
+    border-right: #9cc670
+    1px solid;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -460,9 +465,13 @@ label{
     width: 300px;
     border-radius: 10px;
     border-left: #9cc670
-    2px solid;
+    3px solid;
     border-bottom: #9cc670
-    2px solid;
+    3px solid;
+    border-top: #9cc670
+    1px solid;
+    border-right: #9cc670
+    1px solid;
     display: flex;
     flex-direction: column;
     align-items: center;
