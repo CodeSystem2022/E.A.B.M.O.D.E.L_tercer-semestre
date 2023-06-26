@@ -54,19 +54,6 @@
                     </h6>
                 </article>
             </div>
-            <div>
-                <form>
-                    <div>
-                        <label>Peso Inicial</label>
-                        <input type="email" placeholder="Peso Inicial" required />
-                    </div>
-                    <div>
-                        <label>Altura</label>
-                        <input type="email" placeholder="Altura" required />
-                    </div>
-                </form>
-            </div>
-
         </section>
 
         <section class="second_section">
@@ -119,9 +106,96 @@
                 </article>
         </section>
 
+        <section class="three_section">
+
+            
+            <form method="POST" id="form-imc" action="">
+                <article class="article-form-cal">
+                    <h1>Calcular <span>IMC</span></h1>
+                    <p>Para un cálculo correcto necesitamos algo de información básica sobre ti</p>
+                </article>
+
+                <div class="container-form">
+                    <div class="form-group">
+                        <article class="form-option-gender">
+                            <label>¿Cuál es tu género?</label>
+                            <div class="mt-16">
+                                <div class="icn-btn-wrapper" id="gender-icn-btn-wrapper">
+                                <label for="male">
+                                    <div class="img-btn-container">
+                                    <img class="icon-svg" src="../static/img/form/hombre.png" alt="Hombre" type="image/svg+xml">
+                                        Hombre
+                                    </div>
+                                    <input type="radio" id="male" name="gender" value="male" hidden>
+                                </label>
+                                <label for="female">
+                                    <div class="img-btn-container">
+                                    <img class="icon-svg" src="../static/img/form/mujer.png" alt="Mujer" type="image/svg+xml">
+                                        Mujer
+                                    </div>
+                                    <input type="radio" id="female" name="gender" value="female" hidden>
+                                </label>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="form-option-date">
+                            <label>¿Cuál es tu edad?</label>
+                            <article>
+                                <input type="date">
+                            </article>
+                        </article>
+                    </div>
+                
+                <div class="form-group">
+                    <article class="form-option-date">
+                        <label>¿Cuánto mides?</label>
+                        <article>
+                            <input type="text" placeholder="180">
+                        </article>
+                    </article>
+
+                    <article class="form-option-date">
+                        <label>¿Cuánto pesas?</label>
+                        <article>
+                            <input type="text" placeholder="60">
+                        </article>
+                    </article>
+
+                </div>
+
+            </form>
+
+            <!---form 1
+            <form method="POST" id="form-calorias-quemadas" action="">
+            <article>
+                <h1>Calcular <span>calorías</span> quemadas</h1>
+                <p>Para un cálculo correcto necesitamos algo de información básica sobre ti</p>
+            </article>
+                <label>Selecciona un ejercicio para calcular las calorías quemadas</label>
+                <select>
+                    <option>Caminata</option>
+                    <option>Natacion</option>
+                    <option>Correr</option>
+                </select>
+                <article>
+                    <article>
+                        <label>Duración de la actividad</label>
+                        <input name="name" id="name" type="text" required placeholder="0"/>min
+                    </article>
+                    
+
+                </article>
+            </form>
+            -->
+
+
+
+        </section>
+
     </main>
 
-    <div class="canvas-container" id="canvas-container_one" style="display: block;"><canvas class="canvas" id="myChart1"></canvas></div>
+    <div class="canvas-container" id="canvas-container_one" style="display: none;"><canvas class="canvas" id="myChart1"></canvas></div>
     <div class="canvas-container" id="canvas-container_two" style="display: none;"><canvas class="canvas" id="myChart2"></canvas></div>
     <div class="canvas-container" id="canvas-container_three" style="display: none;"><canvas class="canvas" id="myChart3"></canvas></div>
 

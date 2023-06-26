@@ -122,9 +122,6 @@ nav #menu-first {
     
     main{
         padding-top: 30px;
-        background: rgb(15, 15, 15); 
-        background: -webkit-linear-gradient(to right, #121212, #181818, #121212);
-        background: linear-gradient(to right, #121212, #181818, #121212);     
     }
 
     body.mobile-menu-active nav #menu-first {
