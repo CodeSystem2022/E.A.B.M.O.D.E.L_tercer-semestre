@@ -18,33 +18,33 @@
                 <article>
                     <h2 class="title-register">Login <span>Life</span></h2>
                 </article>
-                <form class="register-section-form">
-
-                    <label>Correo Electronico</label>
-                    <input type="email" placeholder="Ingresa tu Correo" required />
-
+                <form class="register-section-form" method="POST" action="/">
+                    <label>Correo Electrónico</label>
+                    <input name="email" type="email" placeholder="Ingresa tu Correo" required />
+                
                     <label>Contraseña</label>
-                    <input type="password" placeholder="Ingresa tu Contraseña" required/>
-
+                    <input name="password" type="password" placeholder="Ingresa tu Contraseña" required/>
+                
                     <button>
-                        <a href="../static/inicio-seccion.html">
-                            <div class="button-style-1">
-                                <div class="button-name">
-                                    Iniciar Sesión
-                                </div>
-                                <div class="button-icon">
-                                    >>
-                                </div>
+                        <div class="button-style-1">
+                            <div class="button-name">
+                                Iniciar Sesión
                             </div>
-                        </a>
+                            <div class="button-icon">
+                                >>
+                            </div>
+                        </div>
                     </button>
-
-
+                    
+                    {% if error %}
+                    <p class="error-message">Usuario o contraseña incorrectos</p>
+                    {% endif %}
                 </form>
+                
             </article>
             
             <article class="register-section-one-article-two">
-                <h3>¿Todavia no te has <span>creado</span> una cuenta?</h3>
+                <h3>¿Todavía no te has <span>creado</span> una cuenta?</h3>
                 <p class="p-text">Para utilizar la aplicación Life, es necesario realizar un proceso de autenticación. Este paso garantiza la seguridad de tus datos y proporciona una experiencia personalizada y protegida.</p>
                 
                 <button>
@@ -73,3 +73,4 @@
 
 </body>
 </html>
+

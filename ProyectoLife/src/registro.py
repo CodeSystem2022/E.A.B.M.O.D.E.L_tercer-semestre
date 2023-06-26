@@ -13,7 +13,6 @@ from flask import (
 
 from sqlalchemy import  text
 
-
 registro = Blueprint('registro', __name__, template_folder='templates')
 
 @registro.route('/registro', methods=['GET', 'POST'])
@@ -39,7 +38,6 @@ def getall():
         db.session.commit()
 
         # redireccionamos a la pagina de login
-        flash('Usuario registrado correctamente')
         return redirect(url_for('login.getall'))
 
     return render_template('registro.html')

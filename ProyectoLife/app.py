@@ -5,6 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 from  src.home import home
 from  src.login import login
 from  src.registro import registro
+from  src.logout import logout
 
 
 app = Flask(__name__)
@@ -22,6 +23,7 @@ app.secret_key = 'lautneslamejorilovepython'
 app.register_blueprint(home)
 app.register_blueprint(login)
 app.register_blueprint(registro)
+app.register_blueprint(logout)
 
 
 if __name__=='__main__':
