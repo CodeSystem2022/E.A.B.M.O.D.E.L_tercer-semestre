@@ -241,8 +241,6 @@ body > main > section.second_section > article:hover {
 
 
 
-
-
 /*seccion tres*/
 /*erwin tocando cositas*/
 /* Estilos del menú vertical */
@@ -252,22 +250,27 @@ body > main > section.second_section > article:hover {
     top: 74px;
     bottom: 0;
     width: 80px;
-    background-color: #161616;
+    height: 100%;
 }
 
 .vertical-menu {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
+    height: 100%;
 }
 
 .vertical-menu ul {
     list-style-type: none;
     margin: 0;
-    margin-top: 15px;
     padding: 0;
-    align-self: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    text-align:end
 }
 
 .vertical-menu li {
@@ -283,14 +286,17 @@ body > main > section.second_section > article:hover {
 
 .vertical-menu ul li a {
     display: block;
-    writing-mode: vertical-lr;
+    writing-mode: vertical-rl;
     text-orientation: sideways-right;
+    white-space: 2px;
+    text-transform: uppercase;
+    transform: rotate(180deg) scaleX(1);
     padding: 10px;
     font-size: 15px;
 }
 
 .vertical-menu li a:hover {
-    background-color: #9cc670;
+    color: #82c337;
 }
 
 /* Ajustes de posicionamiento del contenido principal */
@@ -298,12 +304,8 @@ body > main > section.second_section > article:hover {
     margin-left: 100px;
 }
 
-body > main > section.three_section > div{
-    width: 100vw;
-    background-color: #161616;
-    display: flex;
-    justify-content: space-evenly;
-}
+
+
 @media screen and (max-width:780px){
     body > main > section.three_section > div{
         display: grid;
@@ -324,6 +326,8 @@ body > main > section.three_section > div > article:hover{
     cursor: pointer;
 }
 
+
+
 .three_section{
     display: flex;
     flex-direction: column;
@@ -331,6 +335,9 @@ body > main > section.three_section > div > article:hover{
     padding-top: 30px;
     padding-bottom: 30px;
     width: 100%;
+    border-radius: 10px;
+    background: #161616;
+   
 }
 .three_section h1{
     font-size: 30px;
@@ -346,10 +353,6 @@ body > main > section.three_section > div > article:hover{
     margin-bottom: 20px;
 }
 
-#form-imc{
-    display: flex;
-    background-color: #0f0f0f;
-}
 #form-test1, #form-test2{
     display: none;
     background-color: #0f0f0f;
@@ -397,6 +400,8 @@ label{
 .container-form{
     width: 650px;
   }
+
+
   .form-group{
     display:flex;
     flex-direction: row;
@@ -407,7 +412,6 @@ label{
 
 
 .article-form-cal{
-    background-color: #161616;
     width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -417,15 +421,19 @@ label{
     background-color: #161616;
     width: 300px;
     border-radius: 10px;
-    border-left: #9cc670
-    2px solid;
-    border-bottom: #9cc670
-    2px solid;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 0px;
     margin-top: 20px;
+    border-left: rgb(79, 78, 78)
+    1px solid;
+    border-bottom: rgb(79, 78, 78)
+    1px solid;
+    border-top: rgb(79, 78, 78)
+    1px solid;
+    border-right: rgb(79, 78, 78)
+    1px solid;
 }
 
 
@@ -451,10 +459,14 @@ label{
     background-color: #161616;
     width: 300px;
     border-radius: 10px;
-    border-left: #9cc670
-    2px solid;
-    border-bottom: #9cc670
-    2px solid;
+    border-left: rgb(79, 78, 78)
+    1px solid;
+    border-bottom: rgb(79, 78, 78)
+    1px solid;
+    border-top: rgb(79, 78, 78)
+    1px solid;
+    border-right: rgb(79, 78, 78)
+    1px solid;
     display: flex;
     flex-direction: column;
     align-items: center;

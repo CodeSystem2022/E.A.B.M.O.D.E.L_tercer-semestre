@@ -101,6 +101,45 @@ input[type=text], input[type=email], input[type=tel], input[type=url], input[typ
     border: 3px solid #fff;
 }
 
+.button-style-3{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 15px 0px;
+  color: #fff;
+  cursor: pointer;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 230px;
+  height: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size:14px;
+  background-color: #82c337;
+  border: 3px solid #82c337;
+}
+
+.button-style-3:hover{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 15px 0px;
+  color: #fff;
+  cursor: pointer;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 230px;
+  height: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size:14px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 3px solid rgb(79, 78, 78);
+}
+
+
+
+
 h3{
     text-transform:uppercase;
     font-size: 30px;

@@ -37,12 +37,7 @@ document.getElementById("second_section_row_third").addEventListener("click", fu
 document.querySelector("#first_form").addEventListener("click", function() {
     chart_visibility("form-imc");
 });
-document.querySelector("#second_form").addEventListener("click", function() {
-    chart_visibility("form-test1");
-});
-document.querySelector("#third_form").addEventListener("click", function() {
-    chart_visibility("form-test2");
-});
+
 
 /*test */
 // Obtenemos los elementos del DOM
