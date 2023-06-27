@@ -255,10 +255,183 @@ body > main > section.second_section > article:hover {
 .vertical-menu li a:hover {
     color: #82c337;
 }
+.vertical-menu li a:focus, .vertical-menu li a:active{
+    text-underline-offset: 10px;
+    text-decoration: underline;
+    list-style: 1px solid #82c337;
+}
 
 /* Ajustes de posicionamiento del contenido principal */
 .container {
     margin-left: 100px;
+}
+
+.form-option-number{
+    background-color: #161616;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+    margin-top: 20px;
+    border-left: rgb(79, 78, 78)
+    1px solid;
+    border-bottom: rgb(79, 78, 78)
+    1px solid;
+    border-top: rgb(79, 78, 78)
+    1px solid;
+    border-right: rgb(79, 78, 78)
+    1px solid;
+}
+#form-peso_ideal > div > form > div > div:nth-child(2) > article.form-option-number > label{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #a8a4a4;
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
+#form-peso_ideal > div > form > div > div:nth-child(2) > article.form-option-number > article > input[type=number]{
+    margin-top: 16px;
+    width: 250px;
+    margin-bottom: 10px;
+    color:#a8a4a4;
+    border: 1px solid #e2dede;
+    padding: 10px;
+}
+#form-peso_ideal > div > form > div > div:nth-child(2) > article.form-option-number > article > input[type=number]:focus {
+    border-color: #82c337;
+    box-shadow: 0 0 5px #82c337;
+}
+/*Form- activity*/
+.form-activity {
+    margin-bottom: 10px;
+    width: 100%;
+    color: #a8a4a4;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(79, 78, 78);
+}
+
+.form-activity label {
+    font-size: 15px;
+}
+
+.form-activity input[type="range"] {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background-color: #a8a4a4;
+    outline: none;
+}
+
+.form-activity input[type="range"]::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #82c337;
+    cursor: pointer;
+}
+
+.form-activity input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #82c337;
+    cursor: pointer;
+}
+
+.form-activity input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #82c337;
+    cursor: pointer;
+}
+
+.form-activity input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #82c337;
+}
+
+.form-activity input[type="range"]::-moz-range-track {
+    background-color: #82c337;
+}
+
+.form-activity input[type="range"]::-ms-track {
+    background-color: #82c337;
+}
+
+.form-activity input[type="range"]::-webkit-slider-runnable-track::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    top: 3px;
+    left: 0;
+}
+
+.form-activity input[type="range"]::-moz-range-track::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    top: 3px;
+    left: 0;
+}
+
+.form-activity input[type="range"]::-ms-track::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    top: 3px;
+    left: 0;
+}
+
+.form-activity input[type="range"]::-webkit-slider-runnable-track::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background-color: #82c337;
+    top: 3px;
+    left: 0;
+    z-index: 1;
+}
+
+.form-activity input[type="range"]::-moz-range-track::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background-color: #82c337;
+    top: 3px;
+    left: 0;
+    z-index: 1;
+}
+
+.form-activity input[type="range"]::-ms-track::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background-color: #82c337;
+    top: 3px;
+    left: 0;
+    z-index: 1;
+}
+
+.indicators {
+    display: flex;
+    justify-content: space-between;
+}
+
+.indicators label {
+    font-size: 10px;
 }
 
 
@@ -358,6 +531,9 @@ label{
     width: 650px;
   }
 
+#form-peso_ideal{
+    display: none;
+}
 
   .form-group{
     display:flex;

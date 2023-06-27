@@ -41,15 +41,18 @@ document.querySelector("#first_form").addEventListener("click", function() {
 
 /*test */
 // Obtenemos los elementos del DOM
-let formulariosLink = document.getElementById('formularios');
-let graficosLink = document.getElementById('graficos');
-let threeSection = document.querySelector('.three_section');
-let secondSection = document.querySelector('.second_section');
+const formulariosLink = document.getElementById('formularios');
+const formularioPeso = document.getElementById("peso_ideal");
+const formularioPesoLink = document.getElementById("form-peso_ideal");
+const graficosLink = document.getElementById('graficos');
+const threeSection = document.querySelector('.three_section');
+const secondSection = document.querySelector('.second_section');
 
 formulariosLink.addEventListener('click', function(event) {
     event.preventDefault();
 
     threeSection.style.display = 'flex';
+    formularioPesoLink.style.display = "none";
     secondSection.style.display = 'none';
 
     let allChartContainers;
@@ -58,10 +61,24 @@ formulariosLink.addEventListener('click', function(event) {
         allChartContainers[i].style.display = "none";
     };
 });
+formularioPeso.addEventListener('click', function(event) {
+    event.preventDefault();
 
+    threeSection.style.display = 'none';
+    formularioPesoLink.style.display = "flex";
+    document.querySelector("#form-peso_ideal").style.display = "flex";
+    secondSection.style.display = 'none';
+
+    let allChartContainers;
+    allChartContainers = document.querySelectorAll(".canvas-container");
+    for (let i = 0; i < allChartContainers.length; i++) {
+        allChartContainers[i].style.display = "none";
+    };
+});
 graficosLink.addEventListener('click', function(event) {
     event.preventDefault();
 
-    secondSection.style.display = 'flex';
+    secondSection.style.display = 'block';
+    formularioPesoLink.style.display = "none";
     threeSection.style.display = 'none';
 });
