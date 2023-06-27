@@ -39,21 +39,20 @@ header{
 }
 
 .logo{
-    margin-left: 40px;
+    width: auto;
+    margin-left: 10px;
     z-index: 4;
 }
 
 .logo h2{
     color: #fff9f9;
     text-transform: uppercase;
-     
     font-size: 13px;
     font-weight:700;
 
 }
-
 .logo img{
-    width: 60px;
+    width:  60px;
     height: 60px;
 }
 

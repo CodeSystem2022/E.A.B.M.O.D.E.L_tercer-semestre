@@ -146,11 +146,6 @@ main{
 
 /*modified after 750px*/
 /*modificados seccion 1,2,3 su width a fit content en lugar de 500px*/
-@media screen and (max-width: 750px){
-    .second_section{
-        display: grid;
-    }
-}
 
 
 
