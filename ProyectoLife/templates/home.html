@@ -48,8 +48,15 @@
                     <a href="#" id="formularios">Calcular IMC</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#" id="formularios">Calcular Peso Ideal</a>
+                    <a href="#" id="peso_ideal">Calcular calorias diarias</a>
                 </li>
+                <!--To check-->
+                <!--<li class="menu-item">-->
+                <!--    <a href="#" id="calorrias_diarias">peso Ideal</a>-->
+                <!--</li>-->
+                <!--<li class="menu-item">-->
+                <!--    <a href="#" id="calorias_quemadas">Calcular calorias quemadas</a>-->
+                <!--</li>-->
                 <li class="menu-item">
                     <a href="#" id="graficos">Graficos</a>
                 </li>
@@ -66,12 +73,13 @@
                 </article>
                 <article class="first_section_two">
                     <h6>
-                        In this section you will be able to know the diagnoses of your tasks of your platform.
+                        Nuestra página cuenta con una calculadora de peso y grasa corporal que te permitirá llevar un control de las calorías que consumes y quemas. Podrás registrar y monitorear tu balance calórico diario, así como obtener información sobre tu composición corporal. ¡Comienza a tomar el control de tu bienestar ahora mismo!
                     </h6>
                 </article>
             </div>
         </section>
 
+        <!--IMC-->
         <section class="three_section">
 
             <div id="form-imc">
@@ -145,33 +153,98 @@
                 </form>
             </div>
 
-         
+        </section>
 
-            <!---form 1
-            <form method="POST" id="form-calorias-quemadas" action="">
-            <article>
-                <h1>Calcular <span>calorías</span> quemadas</h1>
-                <p>Para un cálculo correcto necesitamos algo de información básica sobre ti</p>
-            </article>
-                <label>Selecciona un ejercicio para calcular las calorías quemadas</label>
-                <select>
-                    <option>Caminata</option>
-                    <option>Natacion</option>
-                    <option>Correr</option>
-                </select>
-                <article>
-                    <article>
-                        <label>Duración de la actividad</label>
-                        <input name="name" id="name" type="text" required placeholder="0"/>min
-                    </article>
+        <!--Peso ideal <section id="form-peso_ideal" class="three_section">-->
+        <section class="three_section" id="form-peso_ideal">
+
+            <div>
+                <form method="POST" action="">
+                    <div class="container-form">
+                        <article class="article-form-cal" id="first_form">
+                            <h1>Calcular <span>las Calorias Quemadas</span></h1>
+                            <p>Para un cálculo correcto necesitamos algo de información básica sobre ti</p>
+                        </article>
                     
+                        <div class="form-group">
+                            <article class="form-option-gender">
+                                <label>¿Cuál es tu sexo?</label>
+                                <div class="mt-16">
+                                    <div class="icn-btn-wrapper" id="gender-icn-btn-wrapper">
+                                    <label for="male">
+                                        <div class="img-btn-container">
+                                        <img class="icon-svg" src="../static/img/form/hombre.png" alt="Hombre" type="image/svg+xml">
+                                            Hombre
+                                        </div>
+                                        <input type="radio" id="male" name="gender" value="male" hidden>
+                                    </label>
+                                    <label for="female">
+                                        <div class="img-btn-container">
+                                        <img class="icon-svg" src="../static/img/form/mujer.png" alt="Mujer" type="image/svg+xml">
+                                            Mujer
+                                        </div>
+                                        <input type="radio" id="female" name="gender" value="female" hidden>
+                                    </label>
+                                    </div>
+                                </div>
+                            </article>
+                        
+                            <article class="form-option-number">
+                                <label>¿Cuantos años tienes?</label>
+                                <article>
+                                    <input type="number" placeholder="0">
+                                </article>
+                            </article>
+                        </div>
+                    
+                    <div class="form-group">
+                        <article class="form-option-date">
+                            <label>¿Cual es tu altura?</label>
+                            <article>
+                                <input type="text" placeholder="180">
+                            </article>
+                        </article>
+                    
+                        <article class="form-option-date">
+                            <label>¿Cual es tu peso?</label>
+                            <article>
+                                <input type="text" placeholder="60">
+                            </article>
+                        </article>
 
-                </article>
-            </form>
-            -->
+                        </div>
 
-            
-
+                        <div class="form-group">
+                            <article class="form-activity">
+                                <label>¿Que tan activo eres diariamente?</label>
+                                <br>
+                                <br>
+                                <article>
+                                    <input type="range" min="0" max="100" step="10" list="tickmarks">
+                                </article>
+                                <br>
+                                <div class="indicators">
+                                    <label>0 - No realiza ejercicio</label>
+                                    <label>50 - Actividad física media</label>
+                                    <label>100 - Realiza actividad física a diario</label>
+                                </div>
+                            </article>
+                        </div>
+                
+                    <button type="submit">
+                        <div class="button-style-3">
+                            <div class="button-name">
+                                Enviar
+                            </div>
+                            <div class="button-icon">
+                                >>
+                            </div>
+                        </div>
+                    </button>
+                
+                </form>
+            </div>
+        
         </section>
 
         <section class="second_section">
@@ -218,7 +291,8 @@
     
     <script src="../static/js/modules/loader.js"></script>
     <script src="../static/js/modules/menu.js"></script>
-    <script src="../static/js/graphics.js"></script>
+    <script src="../static/js/displays.js"></script>
     <script src="../static/js/chartjs/chart.js"></script>
+    <script src="../static/js/calculator.js"></script>
 </body>
 </html>

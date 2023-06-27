@@ -1,4 +1,4 @@
-"use strict";
+﻿"use strict";
 
 // New chart
 function createChart(chartId, config) {
@@ -125,4 +125,3 @@ const config3 = {
 const myChart1 = createChart('myChart1', config1);
 const myChart2 = createChart('myChart2', config2);
 const myChart3 = createChart('myChart3', config3);
-
