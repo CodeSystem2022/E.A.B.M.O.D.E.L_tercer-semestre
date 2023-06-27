@@ -49,10 +49,10 @@ const config1 = {
 const config2 = {
     type: 'bar',
     data: {
-        labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo'],
+        labels: ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', "Domingo"],
         datasets: [{
             label: 'Ventas mensuales',
-            data: [1200, 1500, 900, 1100, 800],
+            data: [1200, 1500, 900, 1100, 800, 500, 400],
             backgroundColor: '#9F9F9FAD',
             borderColor: 'white',
             borderWidth: 1
@@ -86,14 +86,20 @@ const config2 = {
 const config3 = {
     type: 'line',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', "Domingo"],
         datasets: [{
             label: 'Puntos de datos',
-            data: [12, 19, 3, 5, 2, 3],
+            data: [12, 19, 3, 5, 2, 3, 5],
             backgroundColor: '#474747D9',
             borderColor: '#474747D9',
             borderWidth: 3
-        }]
+        },{
+            label: 'Puntos de gatos',
+            data: [2, 9, 10, 7, 20, 4 ,9],
+            backgroundColor: 'green',
+            borderColor: 'green',
+            borderWidth: 3
+        }],
     },
     options: {
         responsive: true,
@@ -122,6 +128,6 @@ const config3 = {
 };
 
 // Chart init
-const myChart1 = createChart('myChart1', config1);
+const myChart1 = createChart('myChart1', config3);
 const myChart2 = createChart('myChart2', config2);
-const myChart3 = createChart('myChart3', config3);
+const myChart3 = createChart('myChart3', config1);

@@ -20,7 +20,7 @@ function chart_visibility(chartId) {
             };
         };
 
-        chartContainer.style.display = "block";
+        chartContainer.style.display = "flex";
         activeChartId = chartId;
     };
 };
@@ -42,18 +42,35 @@ document.querySelector("#first_form").addEventListener("click", function() {
 /*test */
 // Obtenemos los elementos del DOM
 const formulariosLink = document.getElementById('formularios');
-const formularioPeso = document.getElementById("peso_ideal");
+const formularioPeso = document.getElementById("calorias_quemadas");
 const formularioPesoLink = document.getElementById("form-peso_ideal");
+const formularioPesoIdeal = document.querySelector("#calorias_consumidas");
 const graficosLink = document.getElementById('graficos');
 const threeSection = document.querySelector('.three_section');
 const secondSection = document.querySelector('.second_section');
+const fourthSection = document.querySelector("#form-fourth_form");
+// Text decorations on section
+const first_section  = document.querySelector("#formularios");
+const second_section = document.querySelector("#calorias_quemadas");
+const third_section  = document.querySelector("#graficos");
+const fourth_section = document.querySelector("#calorias_consumidas")
 
 formulariosLink.addEventListener('click', function(event) {
     event.preventDefault();
 
+    // Display
     threeSection.style.display = 'flex';
     formularioPesoLink.style.display = "none";
     secondSection.style.display = 'none';
+    fourthSection.style.display = 'none';
+
+    // Decotation
+    first_section.style.textUnderlineOffset = '10px';
+    first_section.style.textDecoration = 'underline';
+    first_section.style.listStyle = '1px solid #82c337';
+    second_section.style.textDecoration = 'none';
+    fourth_section.style.textDecoration = 'none';
+    third_section.style.textDecoration = 'none';
 
     let allChartContainers;
     allChartContainers = document.querySelectorAll(".canvas-container");
@@ -68,6 +85,14 @@ formularioPeso.addEventListener('click', function(event) {
     formularioPesoLink.style.display = "flex";
     document.querySelector("#form-peso_ideal").style.display = "flex";
     secondSection.style.display = 'none';
+    fourthSection.style.display = 'none';
+
+    second_section.style.textUnderlineOffset = '10px';
+    second_section.style.textDecoration = 'underline';
+    second_section.style.listStyle = '1px solid #82c337';
+    first_section.style.textDecoration = 'none';
+    third_section.style.textDecoration = 'none';
+    fourth_section.style.textDecoration = 'none';
 
     let allChartContainers;
     allChartContainers = document.querySelectorAll(".canvas-container");
@@ -78,7 +103,38 @@ formularioPeso.addEventListener('click', function(event) {
 graficosLink.addEventListener('click', function(event) {
     event.preventDefault();
 
-    secondSection.style.display = 'block';
+    secondSection.style.display = 'flex';
     formularioPesoLink.style.display = "none";
     threeSection.style.display = 'none';
+    fourthSection.style.display = 'none';
+
+    third_section.style.textUnderlineOffset = '10px';
+    third_section.style.textDecoration = 'underline';
+    third_section.style.listStyle = '1px solid #82c337';
+    first_section.style.textDecoration = 'none';
+    second_section.style.textDecoration = 'none';
+    fourth_section.style.textDecoration = 'none';
+});
+formularioPesoIdeal.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    threeSection.style.display = 'none';
+    formularioPesoLink.style.display = "none";
+    document.querySelector("#form-peso_ideal").style.display = "none";
+    secondSection.style.display = 'none';
+    fourthSection.style.display = 'flex';
+
+    second_section.style.textDecoration = 'none';
+    first_section.style.textDecoration = 'none';
+    third_section.style.textDecoration = 'none';
+    fourth_section.style.textUnderlineOffset = '10px';
+    fourth_section.style.textDecoration = 'underline';
+    fourth_section.style.listStyle = '1px solid #82c337';
+
+    let allChartContainers;
+    allChartContainers = document.querySelectorAll(".canvas-container");
+    for (let i = 0; i < allChartContainers.length; i++) {
+    allChartContainers[i].style.display = "none";
+};
+
 });

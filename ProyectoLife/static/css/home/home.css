@@ -157,13 +157,17 @@ main{
 /*seccion tres*/
 /*erwin tocando cositas*/
 /* Estilos del menÃº vertical */
+#formularios{
+    text-underline-offset: 10px;
+    text-decoration: underline;
+    list-style: 1px solid #82c337;
+}
 .menu-container {
     position: fixed;
     left: 0;
     top: 74px;
     bottom: 0;
     width: 80px;
-    height: 100%;
 }
 
 .vertical-menu {
@@ -392,7 +396,81 @@ main{
     font-size: 10px;
 }
 
+/*fourth section*/
+.fourth_section{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    border-radius: 10px;
+    background: #161616;
+}
+.fourth_section h1{
+    font-size: 30px;
+    text-transform:uppercase ;
+    color: #fff;
+    margin-bottom: 20px;
+}
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.fourth_section p{
+    font-size: 15px;
+    color: rgb(200, 200, 200);
+    margin-bottom: 20px;
+}
+#form-fourth_form > div > form > div > div:nth-child(3){
+    justify-content: center;
+}
+#form-fourth_form > div > form > div > div:nth-child(2) > article.form-option-number > article > input[type=number]{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #e2dede;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-left: 15px;
+    color: #a2a2a2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+article > input[type=number]:focus{
+    border-color: #82c337;
+    box-shadow: 0 0 5px #82c337;
+}
+article > input[type=number]{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #e2dede;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-left: 15px;
+    color: #a2a2a2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#form-fourth_form > div > form > div > div:nth-child(3) > article > article > input[type=number]:focus{
+    border-color: #82c337;
+    box-shadow: 0 0 5px #82c337;
+}
+
+#ideal_weigth{
+    padding-top: 30px;
+    justify-content: center;
+    display: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+}
 
 @media screen and (max-width:780px){
     body > main > section.three_section > div{
@@ -439,11 +517,6 @@ body > main > section.three_section > div > article:hover{
     font-size: 15px;
     color: rgb(200, 200, 200);
     margin-bottom: 20px;
-}
-
-#form-test1, #form-test2{
-    display: none;
-    background-color: #0f0f0f;
 }
 
 
