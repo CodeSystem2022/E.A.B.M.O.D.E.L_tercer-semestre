@@ -1,11 +1,13 @@
 .canvas-container{
     text-align: -webkit-center;
-    background: black;
+    background: #161616;
     margin: 30px 0 50px 0;
     padding: 30px 0 40px 0;
-    border-top: 1px solid #82c337;
     border-bottom: 1px solid #82c337;
+    border-radius: 10px;
 }
 .canvas{
     padding: 0 10% 0 10%;
 }
+
+

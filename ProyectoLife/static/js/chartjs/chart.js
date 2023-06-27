@@ -22,6 +22,8 @@ const config1 = {
         }]
     },
     options: {
+        responsive: true,
+        maintainAspectRatio: false,
         scales: {
             x: {
                 grid: {
@@ -57,6 +59,8 @@ const config2 = {
         }]
     },
     options: {
+        responsive: true,
+        maintainAspectRatio: false,
         scales: {
             x: {
                 grid: {
@@ -92,6 +96,8 @@ const config3 = {
         }]
     },
     options: {
+        responsive: true,
+        maintainAspectRatio: false,
         scales: {
             x: {
                 grid: {
@@ -113,9 +119,10 @@ const config3 = {
             }
         }
     }
-};  
+};
 
 // Chart init
-const  myChart1 = createChart('myChart1', config1);
-const  myChart2 = createChart('myChart2', config2);
-const  myChart3 = createChart('myChart3', config3);
+const myChart1 = createChart('myChart1', config1);
+const myChart2 = createChart('myChart2', config2);
+const myChart3 = createChart('myChart3', config3);
+
