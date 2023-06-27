@@ -22,7 +22,24 @@ def lectura_tabla_alimentos(url):
 
 def crear_tabla_usuarios():
     engine = conexion_db()
-    from models.usuarios import Usuario, Base
+    from models.models import Usuario, Base
+    Base.metadata.create_all(engine)
+
+def crear_tabla_imc():
+    engine = conexion_db()
+    from models.models import Imc, Base
+    Base.metadata.create_all(engine)
+
+
+def crear_calorias_quemadas():
+    engine = conexion_db()
+    from models.models import CaloriasQuemadas, Base
+    Base.metadata.create_all(engine)
+
+
+def crear_peso_ideal():
+    engine = conexion_db()
+    from models.models import PesoIdeal, Base
     Base.metadata.create_all(engine)
 
 
@@ -35,3 +52,14 @@ if __name__== '__main__':
 
     # Crear tabla usuario
     crear_tabla_usuarios()
+
+    # Crear tabla imc
+    crear_tabla_imc()
+
+    # Crear tabla calorias quemadas
+    crear_calorias_quemadas()
+
+    # Crear tabla peso ideal
+    crear_peso_ideal()
+
+
