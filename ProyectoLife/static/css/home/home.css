@@ -561,22 +561,15 @@ label{
     display: none;
 }
 
-  .form-group{
-    display:flex;
+.form-group {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 20px;
   }
-
-
-.article-form-cal{
-    width: 100%;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.form-option-gender{
+  
+  .form-option-gender {
     background-color: #161616;
     width: 300px;
     border-radius: 10px;
@@ -585,33 +578,44 @@ label{
     align-items: center;
     padding: 10px 0px;
     margin-top: 20px;
-    border-left: rgb(79, 78, 78)
-    1px solid;
-    border-bottom: rgb(79, 78, 78)
-    1px solid;
-    border-top: rgb(79, 78, 78)
-    1px solid;
-    border-right: rgb(79, 78, 78)
-    1px solid;
-}
-
-
-.icn-btn-wrapper {
+    border: 1px solid rgb(79, 78, 78);
+  }
+  
+  .icn-btn-wrapper {
     display: flex;
+    flex-direction: row;
     align-items: center;
   }
-
+  
   .img-btn-container {
     display: flex;
     align-items: center;
     cursor: pointer;
     margin-right: 16px;
   }
-
+  
   .img-btn-container img {
     width: 50px;
     margin-right: 8px;
   }
+  
+  input[type="radio"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+  
+  input[type="radio"]:checked + label {
+    color: #82c337; /* Color de fondo cuando está seleccionado */
+  }
+  
+
+
+
+
+
+
 
   .form-option-date{
     
