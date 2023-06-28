@@ -14,8 +14,8 @@ const config1 = {
     data: {
         labels: ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'],
         datasets: [{
-            label: 'Calorías blabla (1)',
-            data: [12, 19, 3, 5, 2, 3, 5],
+            label: 'Calorías quemadas en la semana',
+            data: [1577.5, 1577.5, 1577.5, 1577.5, 1577.5, 1577.5, 1577.5],
             backgroundColor: '#9F9F9FAD',
             borderColor: 'white',
             borderWidth: 1

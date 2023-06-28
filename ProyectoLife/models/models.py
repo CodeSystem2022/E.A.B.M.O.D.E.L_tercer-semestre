@@ -43,6 +43,7 @@ class CaloriasQuemadas(Base):
     peso = Column(Integer, nullable=False)
     actividad = Column(Float, nullable=False)
     calorias_quemadas = Column(Float, nullable=False)
+    dia_semana = Column(Integer, nullable=False)
 
     usuario = relationship("Usuario", back_populates="calorias_quemadas")  # Define the many-to-one relationship
 

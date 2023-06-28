@@ -1,0 +1,1 @@
+Este archivo no se debe borrar, dado que github elimina las carpetas si no existe un archivo con contenido
