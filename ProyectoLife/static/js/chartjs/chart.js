@@ -8,6 +8,7 @@ function createChart(chartId, config) {
     return new Chart(ctx, config);
 };
 
+console.log(usuario_calorias_quemadas);
 // Test
 const config1 = {
     type: 'bar',
@@ -89,7 +90,7 @@ const config3 = {
         labels: ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', "Domingo"],
         datasets: [{
             label: 'Puntos de datos',
-            data: [12, 19, 3, 5, 2, 3, 5],
+            data: [0, 19, 3, 5, 2, 3, 5],
             backgroundColor: '#474747D9',
             borderColor: '#474747D9',
             borderWidth: 3

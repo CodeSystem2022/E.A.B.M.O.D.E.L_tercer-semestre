@@ -18,6 +18,7 @@ home = Blueprint('home', __name__, template_folder='templates')
 
 @home.route('/home', methods=['GET', 'POST'])
 def getall():
+    from app import db
     calorias_quemadas = None
     peso_ideal = None
     imc = None

@@ -3,6 +3,7 @@ import json
 from datetime import datetime
 from decouple import config
 
+
 from flask import (
     flash,
     render_template,
@@ -11,43 +12,36 @@ from flask import (
     redirect,
     url_for,
     Blueprint,
+    jsonify
 )
-from sqlalchemy import  text
+from sqlalchemy import text
 
 calorias_quemadas_user = Blueprint('calorias_quemadas_user', __name__, template_folder='templates')
 
 @calorias_quemadas_user.route('/calorias_quemadas_user', methods=['GET'])
 def getall():
+    usuario_calorias_quemadas = {}
     from app import db
-    # Recuperar todos los registros de la tabla para el usuario actual
-    query = text("SELECT * FROM calorias_quemadas WHERE id_usuario = :user_id")
-    result = db.session.execute(query, {"user_id": session['user_id']})
-    records = result.fetchall()
+    # Obtenemos las calorias quemadas del usuario
+    query = text("SELECT * FROM calorias_quemadas WHERE id_usuario = :id_usuario ORDER BY id DESC LIMIT 7")
+    result = db.session.execute(query, {"id_usuario": session['user_id']})
+    datos_usuario = result.fetchall()
 
-    # Convertir los registros a una lista de diccionarios
-    records_list = []
-    for record in records:
-        record_dict = {
-            'id_usuario': record.id_usuario,
-            'sexo': record.sexo,
-            'edad': record.edad,
-            'altura': record.altura,
-            'peso': record.peso,
-            'actividad': record.actividad,
-            'calorias_quemadas': record.calorias_quemadas,
-            'dia_semana': record.dia_semana
+    for data in datos_usuario:
+        edad = int(datetime.now().year - data.edad.year)
+        # Convertimos de formato int a string los días
+        dias_semana = {
+            0: 'Domingo',
+            1: 'Lunes',
+            2: 'Martes',
+            3: 'Miércoles',
+            4: 'Jueves',
+            5: 'Viernes',
+            6: 'Sábado'
         }
-        records_list.append(record_dict)
 
-    # Convertir la lista de diccionarios a una cadena JSON
-    json_data = json.dumps(records_list)
-
-    # Guardar el JSON en un archivo dentro de la carpeta "temporal"
-    folder_path = "temporal"
-    os.makedirs(folder_path, exist_ok=True)  # Crear la carpeta si no existe
-    file_path = os.path.join(folder_path, "calorias_quemadas.json")
-
-    with open(file_path, 'w') as file:
-        file.write(json_data)
-
-    return 200
+        dia = dias_semana[data.dia_semana]
+        # Guardamos todos los datos en formato diccionario
+        usuario_calorias_quemadas[data.dia_semana]= {"user_id":data.id_usuario, "sexo":data.sexo, "edad":edad, "peso":data.peso, "altura":data.altura, "actividad":data.actividad, "calorias_quemadas":data.calorias_quemadas, "dia":dia}
+    # Enviamos al home
+    return render_template('home.html', nombre=session['nombre'], usuario_calorias_quemadas=usuario_calorias_quemadas)
