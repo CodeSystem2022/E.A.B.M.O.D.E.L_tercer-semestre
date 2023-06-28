@@ -37,7 +37,8 @@ def getall():
             if(user.contraseña == password):
                 session['user_id'] = user.id
                 return render_template('home.html', nombre=user.nombre)
-
+            else:
+                error = True
         else:
             error = True
 
