@@ -8,3 +8,5 @@ export default function ValidacionDeLogin() {
         Password(e)
     });
 }
+
+ValidacionDeLogin()
