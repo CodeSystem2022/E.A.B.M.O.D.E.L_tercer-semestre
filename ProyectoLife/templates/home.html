@@ -79,7 +79,7 @@
         <section class="three_section">
 
             <div id="form-imc">
-                <form method="POST" action="/peso_ideal">
+                <form method="POST" action="/imc">
                     <div class="container-form">
                         <article class="article-form-cal" id="first_form">
                             <h1>Calcular <span>IMC</span></h1>
@@ -107,7 +107,7 @@
                             </article>
 
                             <article class="form-option-date">
-                                <label>¿Cuál es tu edad?</label>
+                                <label>Fecha de nacimiento</label>
                                 <article>
                                     <input name="edad" type="date">
                                 </article>
@@ -118,7 +118,7 @@
                         <article class="form-option-number">
                             <label>¿Cuánto mides?</label>
                             <article>
-                                <input name="estatura" type="number" placeholder="180">
+                                <input name="altura" type="number" placeholder="180">
                             </article>
                         </article>
 
@@ -142,6 +142,11 @@
                             </div>
                         </div>
                     </button>
+                    {%if imc%}
+                    <div>
+                        <h1>Tu imc: <span>{{imc}}</span></h1>
+                    </div>
+                    {%endif%}
 
                 </form>
             </div>
@@ -151,10 +156,10 @@
         <section class="three_section" id="form-peso_ideal">
 
             <div>
-                <form method="POST" action="">
+                <form method="POST" action="/calorias_quemadas">
                     <div class="container-form">
                         <article class="article-form-cal" id="first_form">
-                            <h1>Calcular <span>las Calorias Quemadas</span></h1>
+                            <h1>Calcular <span>las Calorias Quemadas al Día</span></h1>
                             <p>Para un cálculo correcto necesitamos algo de información básica sobre ti</p>
                         </article>
                     
@@ -179,9 +184,9 @@
 
                         
                             <article class="form-option-number">
-                                <label>¿Cuantos años tienes?</label>
+                                <label>Fecha de nacimiento</label>
                                 <article>
-                                    <input type="number" placeholder="0">
+                                    <input name="edad" type="date" placeholder="0">
                                 </article>
                             </article>
                         </div>
@@ -190,14 +195,14 @@
                         <article class="form-option-number">
                             <label>¿Cual es tu altura?</label>
                             <article>
-                                <input type="number" placeholder="180">
+                                <input name="altura" type="number" placeholder="180">
                             </article>
                         </article>
                     
                         <article class="form-option-number">
                             <label>¿Cual es tu peso?</label>
                             <article>
-                                <input type="number" placeholder="60">
+                                <input name="peso" type="number" placeholder="60">
                             </article>
                         </article>
 
@@ -209,7 +214,7 @@
                                 <br>
                                 <br>
                                 <article>
-                                    <input type="range" min="0" max="100" step="10" list="tickmarks">
+                                    <input name="actividad" type="range" min="0" max="100" step="10" list="tickmarks">
                                 </article>
                                 <br>
                                 <div class="indicators">
@@ -219,7 +224,7 @@
                                 </div>
                             </article>
                         </div>
-                
+
                     <button type="submit">
                         <div class="button-style-3">
                             <div class="button-name">
@@ -230,7 +235,11 @@
                             </div>
                         </div>
                     </button>
-                
+                    {%if calorias_quemadas%}
+                    <div>
+                        <h1>Tus calorias quemadas son: <span>{{calorias_quemadas}}</span></h1>
+                    </div>
+                    {%endif%}
                 </form>
             </div>
         
@@ -239,7 +248,7 @@
         <section class="fourth_section" id="form-fourth_form">
 
             <div>
-                <form method="POST" action="/home">
+                <form method="POST" action="/peso_ideal">
                     <div class="container-form">
                         <article class="article-form-cal" id="fourth_form">
                             <h1>Calcular <span>Peso ideal</span></h1>
@@ -267,9 +276,9 @@
                                 </article>
                         
                             <article class="form-option-number">
-                                <label>¿Cuantos años tienes?</label>
+                                <label>Fecha de nacimiento</label>
                                 <article>
-                                    <input name="edad" type="number" placeholder="0">
+                                    <input name="edad" type="date" placeholder="0">
                                 </article>
                             </article>
                         </div>
@@ -299,6 +308,11 @@
                             </div>
                         </div>
                     </button>
+                    {%if peso_ideal%}
+                    <div>
+                        <h1>Tus peso ideal sería: <span>{{peso_ideal}}</span></h1>
+                    </div>
+                    {%endif%}
                 </form>
             </div>
                 

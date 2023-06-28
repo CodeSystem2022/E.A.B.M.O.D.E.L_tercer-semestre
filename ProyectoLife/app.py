@@ -2,11 +2,13 @@ from flask import Flask, render_template, request
 from scripts.DDBB import get_db
 from flask_sqlalchemy import SQLAlchemy
 
-from  src.home import home
-from  src.login import login
-from  src.registro import registro
-from  src.logout import logout
-from  src.peso_ideal import peso_ideal
+from src.home import home
+from src.login import login
+from src.registro import registro
+from src.logout import logout
+from src.peso_ideal import peso_ideal
+from src.calorias_quemadas import calorias_quemadas
+from src.imc import imc
 
 
 app = Flask(__name__)
@@ -26,6 +28,8 @@ app.register_blueprint(login)
 app.register_blueprint(registro)
 app.register_blueprint(logout)
 app.register_blueprint(peso_ideal)
+app.register_blueprint(calorias_quemadas)
+app.register_blueprint(imc)
 
 
 if __name__=='__main__':
