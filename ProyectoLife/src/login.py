@@ -34,8 +34,8 @@ def getall():
 
         if user is not None:
             error = False
-            print(user.nombre)
             if(user.contraseña == password):
+                session['user_id'] = user.id
                 return render_template('home.html', nombre=user.nombre)
 
         else:

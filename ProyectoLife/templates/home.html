@@ -31,9 +31,9 @@
                 <li class="menu-first-item-class active">
                     <a href="#">Inicio</a>
                 </li>
-                <!--<li class="menu-first-item-class">-->
-                <!--    <a href="#">Perfil</a>-->
-                <!--</li>-->
+                <li class="menu-first-item-class">
+                    <a href="#">Perfil</a>
+                </li>
                 <li class="menu-first-item-class">
                     <a href="/logout">Cerrar Sesion</a>
                 </li>
@@ -48,10 +48,10 @@
                     <a href="#" id="formularios">Calcular IMC</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#" id="calorias_quemadas">Calorias Quemadas</a>
+                    <a href="#" id="calorias_quemadas">Calcular Calorias Quemadas</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#" id="calorias_consumidas">Calorias Consumidas</a>
+                    <a href="#" id="calorias_consumidas">Calcular Calorias Consumidas</a>
                 </li>
                 <li class="menu-item">
                     <a href="#" id="graficos">Graficos</a>
@@ -79,7 +79,7 @@
         <section class="three_section">
 
             <div id="form-imc">
-                <form method="POST" action="">
+                <form method="POST" action="/peso_ideal">
                     <div class="container-form">
                         <article class="article-form-cal" id="first_form">
                             <h1>Calcular <span>IMC</span></h1>
@@ -112,7 +112,7 @@
                             <article class="form-option-date">
                                 <label>¿Cuál es tu edad?</label>
                                 <article>
-                                    <input type="date">
+                                    <input name="edad" type="date">
                                 </article>
                             </article>
                         </div>
@@ -121,14 +121,14 @@
                         <article class="form-option-number">
                             <label>¿Cuánto mides?</label>
                             <article>
-                                <input type="number" placeholder="180">
+                                <input name="estatura" type="number" placeholder="180">
                             </article>
                         </article>
 
                         <article class="form-option-number">
                             <label>¿Cuánto pesas?</label>
                             <article>
-                                <input type="number" placeholder="60">
+                                <input name="peso" type="number" placeholder="60">
                             </article>
                         </article>
 
@@ -245,7 +245,7 @@
         <section class="fourth_section" id="form-fourth_form">
 
             <div>
-                <form method="POST" action="">
+                <form method="POST" action="/home">
                     <div class="container-form">
                         <article class="article-form-cal" id="fourth_form">
                             <h1>Calcular <span>Peso ideal</span></h1>
@@ -278,7 +278,7 @@
                             <article class="form-option-number">
                                 <label>¿Cuantos años tienes?</label>
                                 <article>
-                                    <input type="number" placeholder="0">
+                                    <input name="edad" type="number" placeholder="0">
                                 </article>
                             </article>
                         </div>
@@ -287,7 +287,7 @@
                         <article class="form-option-number">
                             <label>¿Cual es tu altura?</label>
                             <article>
-                                <input type="number" placeholder="180">
+                                <input name="altura" type="number" placeholder="180">
                             </article>
                         </article>
                     </div>
@@ -298,7 +298,7 @@
                         </article>
                     </div>
 
-                    <button type="submit">
+                    <button>
                         <div class="button-style-3">
                             <div class="button-name">
                                 Calcular

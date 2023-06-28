@@ -6,6 +6,7 @@ from  src.home import home
 from  src.login import login
 from  src.registro import registro
 from  src.logout import logout
+from  src.peso_ideal import peso_ideal
 
 
 app = Flask(__name__)
@@ -24,6 +25,7 @@ app.register_blueprint(home)
 app.register_blueprint(login)
 app.register_blueprint(registro)
 app.register_blueprint(logout)
+app.register_blueprint(peso_ideal)
 
 
 if __name__=='__main__':
