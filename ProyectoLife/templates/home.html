@@ -32,9 +32,6 @@
                     <a href="#">Inicio</a>
                 </li>
                 <li class="menu-first-item-class">
-                    <a href="#">Perfil</a>
-                </li>
-                <li class="menu-first-item-class">
                     <a href="/logout">Cerrar Sesion</a>
                 </li>
             </ul>
@@ -45,13 +42,13 @@
         <nav class="vertical-menu">
             <ul>
                 <li class="menu-item">
-                    <a href="#" id="formularios">Calcular IMC</a>
+                    <a href="#" id="formularios">IMC</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#" id="calorias_quemadas">Calcular Calorias Quemadas</a>
+                    <a href="#" id="calorias_quemadas">Calorias Quemadas</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#" id="calorias_consumidas">Calcular Calorias Consumidas</a>
+                    <a href="#" id="calorias_consumidas">Peso Ideal</a>
                 </li>
                 <li class="menu-item">
                     <a href="#" id="graficos">Graficos</a>
@@ -79,7 +76,7 @@
         <section class="three_section">
 
             <div id="form-imc">
-                <form method="POST" action="">
+                <form method="POST" action="/imc">
                     <div class="container-form">
                         <article class="article-form-cal" id="first_form">
                             <h1>Calcular <span>IMC</span></h1>
@@ -87,32 +84,29 @@
                         </article>
 
                         <div class="form-group">
+
                             <article class="form-option-gender">
                                 <label>¿Cuál es tu sexo?</label>
                                 <div class="mt-16">
                                     <div class="icn-btn-wrapper" id="gender-icn-btn-wrapper">
-                                    <label for="male">
-                                        <div class="img-btn-container">
-                                        <img class="icon-svg" src="../static/img/form/hombre.png" alt="Hombre" type="image/svg+xml">
+                                        <input type="radio" id="male1" name="gender" value="male">
+                                        <label for="male1" class="img-btn-container">
+                                            <img class="icon-svg" src="../static/img/form/hombre.png" alt="Hombre" type="image/svg+xml">
                                             Hombre
-                                        </div>
-                                        <input type="radio" id="male" name="gender" value="male" hidden>
-                                    </label>
-                                    <label for="female">
-                                        <div class="img-btn-container">
-                                        <img class="icon-svg" src="../static/img/form/mujer.png" alt="Mujer" type="image/svg+xml">
+                                        </label>
+                                        <input type="radio" id="female1" name="gender" value="female">
+                                        <label for="female1" class="img-btn-container">
+                                            <img class="icon-svg" src="../static/img/form/mujer.png" alt="Mujer" type="image/svg+xml">
                                             Mujer
-                                        </div>
-                                        <input type="radio" id="female" name="gender" value="female" hidden>
-                                    </label>
+                                        </label>
                                     </div>
                                 </div>
                             </article>
 
                             <article class="form-option-date">
-                                <label>¿Cuál es tu edad?</label>
+                                <label>Fecha de nacimiento</label>
                                 <article>
-                                    <input type="date">
+                                    <input name="edad" type="date">
                                 </article>
                             </article>
                         </div>
@@ -121,14 +115,14 @@
                         <article class="form-option-number">
                             <label>¿Cuánto mides?</label>
                             <article>
-                                <input type="number" placeholder="180">
+                                <input name="altura" type="number" placeholder="180">
                             </article>
                         </article>
 
                         <article class="form-option-number">
                             <label>¿Cuánto pesas?</label>
                             <article>
-                                <input type="number" placeholder="60">
+                                <input name="peso" type="number" placeholder="60">
                             </article>
                         </article>
 
@@ -145,6 +139,22 @@
                             </div>
                         </div>
                     </button>
+                    {%if imc%}
+                    <div>
+                        <h1>Tu imc: <span>{{imc}}</span></h1>
+                    </div>
+                    {%endif%}
+                    {% if error_imc %}
+                    <div class="alert alert-error">
+                        <div class="icon__wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                                <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
+                                <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"/>
+                            </svg>
+                        </div>
+                        <p>Tus datos ingresados son incorectos</p>
+                    </div>
+                    {% endif %}
 
                 </form>
             </div>
@@ -154,10 +164,10 @@
         <section class="three_section" id="form-peso_ideal">
 
             <div>
-                <form method="POST" action="">
+                <form method="POST" action="/calorias_quemadas">
                     <div class="container-form">
                         <article class="article-form-cal" id="first_form">
-                            <h1>Calcular <span>las Calorias Quemadas</span></h1>
+                            <h1>Calcular <span>las Calorias Quemadas al Día</span></h1>
                             <p>Para un cálculo correcto necesitamos algo de información básica sobre ti</p>
                         </article>
                     
@@ -166,28 +176,25 @@
                                 <label>¿Cuál es tu sexo?</label>
                                 <div class="mt-16">
                                     <div class="icn-btn-wrapper" id="gender-icn-btn-wrapper">
-                                    <label for="male">
-                                        <div class="img-btn-container">
-                                        <img class="icon-svg" src="../static/img/form/hombre.png" alt="Hombre" type="image/svg+xml">
+                                        <input type="radio" id="male2" name="gender" value="male">
+                                        <label for="male2" class="img-btn-container">
+                                            <img class="icon-svg" src="../static/img/form/hombre.png" alt="Hombre" type="image/svg+xml">
                                             Hombre
-                                        </div>
-                                        <input type="radio" id="male" name="gender" value="male" hidden>
-                                    </label>
-                                    <label for="female">
-                                        <div class="img-btn-container">
-                                        <img class="icon-svg" src="../static/img/form/mujer.png" alt="Mujer" type="image/svg+xml">
+                                        </label>
+                                        <input type="radio" id="female2" name="gender" value="female">
+                                        <label for="female2" class="img-btn-container">
+                                            <img class="icon-svg" src="../static/img/form/mujer.png" alt="Mujer" type="image/svg+xml">
                                             Mujer
-                                        </div>
-                                        <input type="radio" id="female" name="gender" value="female" hidden>
-                                    </label>
+                                        </label>
                                     </div>
                                 </div>
                             </article>
+
                         
                             <article class="form-option-number">
-                                <label>¿Cuantos años tienes?</label>
+                                <label>Fecha de nacimiento</label>
                                 <article>
-                                    <input type="number" placeholder="0">
+                                    <input name="edad" type="date" placeholder="0">
                                 </article>
                             </article>
                         </div>
@@ -196,14 +203,14 @@
                         <article class="form-option-number">
                             <label>¿Cual es tu altura?</label>
                             <article>
-                                <input type="number" placeholder="180">
+                                <input name="altura" type="number" placeholder="180">
                             </article>
                         </article>
                     
                         <article class="form-option-number">
                             <label>¿Cual es tu peso?</label>
                             <article>
-                                <input type="number" placeholder="60">
+                                <input name="peso" type="number" placeholder="60">
                             </article>
                         </article>
 
@@ -215,7 +222,7 @@
                                 <br>
                                 <br>
                                 <article>
-                                    <input type="range" min="0" max="100" step="10" list="tickmarks">
+                                    <input name="actividad" type="range" min="0" max="100" step="10" list="tickmarks">
                                 </article>
                                 <br>
                                 <div class="indicators">
@@ -225,7 +232,18 @@
                                 </div>
                             </article>
                         </div>
-                
+                        <div class="form-group">
+                            <select name="diasemana">
+                                <option value="0">Domingo</option>
+                                <option value="1">Lunes</option>
+                                <option value="2">Martes</option>
+                                <option value="3">Miércoles</option>
+                                <option value="4">Jueves</option>
+                                <option value="5">Viernes</option>
+                                <option value="6">Sábado</option>
+                              </select>
+                        </div>
+
                     <button type="submit">
                         <div class="button-style-3">
                             <div class="button-name">
@@ -236,7 +254,22 @@
                             </div>
                         </div>
                     </button>
-                
+                    {%if calorias_quemadas%}
+                    <div>
+                        <h1>Tus calorias quemadas son: <span>{{calorias_quemadas}}</span></h1>
+                    </div>
+                    {%endif%}
+                    {% if error_calorias_quemadas %}
+                    <div class="alert alert-error">
+                        <div class="icon__wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                                <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
+                                <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"/>
+                            </svg>
+                        </div>
+                        <p>Tus datos ingresados son incorectos</p>
+                    </div>
+                    {% endif %}
                 </form>
             </div>
         
@@ -245,7 +278,7 @@
         <section class="fourth_section" id="form-fourth_form">
 
             <div>
-                <form method="POST" action="">
+                <form method="POST" action="/peso_ideal">
                     <div class="container-form">
                         <article class="article-form-cal" id="fourth_form">
                             <h1>Calcular <span>Peso ideal</span></h1>
@@ -253,32 +286,29 @@
                         </article>
                     
                         <div class="form-group">
-                            <article class="form-option-gender">
-                                <label>¿Cuál es tu sexo?</label>
-                                <div class="mt-16">
-                                    <div class="icn-btn-wrapper" id="gender-icn-btn-wrapper">
-                                    <label for="male">
-                                        <div class="img-btn-container">
-                                        <img class="icon-svg" src="../static/img/form/hombre.png" alt="Hombre" type="image/svg+xml">
-                                            Hombre
+                            
+                                <article class="form-option-gender">
+                                    <label>¿Cuál es tu sexo?</label>
+                                    <div class="mt-16">
+                                        <div class="icn-btn-wrapper" id="gender-icn-btn-wrapper">
+                                            <input type="radio" id="male3" name="gender" value="male">
+                                            <label for="male3" class="img-btn-container">
+                                                <img class="icon-svg" src="../static/img/form/hombre.png" alt="Hombre" type="image/svg+xml">
+                                                Hombre
+                                            </label>
+                                            <input type="radio" id="female3" name="gender" value="female">
+                                            <label for="female3" class="img-btn-container">
+                                                <img class="icon-svg" src="../static/img/form/mujer.png" alt="Mujer" type="image/svg+xml">
+                                                Mujer
+                                            </label>
                                         </div>
-                                        <input type="radio" id="male" name="gender" value="male" hidden>
-                                    </label>
-                                    <label for="female">
-                                        <div class="img-btn-container">
-                                        <img class="icon-svg" src="../static/img/form/mujer.png" alt="Mujer" type="image/svg+xml">
-                                            Mujer
-                                        </div>
-                                        <input type="radio" id="female" name="gender" value="female" hidden>
-                                    </label>
                                     </div>
-                                </div>
-                            </article>
+                                </article>
                         
                             <article class="form-option-number">
-                                <label>¿Cuantos años tienes?</label>
+                                <label>Fecha de nacimiento</label>
                                 <article>
-                                    <input type="number" placeholder="0">
+                                    <input name="edad" type="date" placeholder="0">
                                 </article>
                             </article>
                         </div>
@@ -287,7 +317,7 @@
                         <article class="form-option-number">
                             <label>¿Cual es tu altura?</label>
                             <article>
-                                <input type="number" placeholder="180">
+                                <input name="altura" type="number" placeholder="180">
                             </article>
                         </article>
                     </div>
@@ -298,7 +328,7 @@
                         </article>
                     </div>
 
-                    <button type="submit">
+                    <button>
                         <div class="button-style-3">
                             <div class="button-name">
                                 Calcular
@@ -308,6 +338,22 @@
                             </div>
                         </div>
                     </button>
+                    {%if peso_ideal%}
+                    <div>
+                        <h1>Tus peso ideal sería: <span>{{peso_ideal}}</span></h1>
+                    </div>
+                    {%endif%}
+                    {% if error_peso_ideal %}
+                        <div class="alert alert-error">
+                            <div class="icon__wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                                    <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
+                                    <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"/>
+                                </svg>
+                            </div>
+                            <p>Tus datos ingresados son incorectos</p>
+                        </div>
+                    {% endif %}
                 </form>
             </div>
                 
@@ -338,7 +384,7 @@
                     <h5>Calorias Quemadas</h5>
                 </div>
                 <div class="item-cal-sec-porc">
-                    <h5>-05%</h5>
+                    <h5>5%</h5>
                 </div>
             </article>
         </section>
@@ -349,12 +395,13 @@
     </main>
 
 
-
-
     <div id="loader">
         <div class="loader-spinner"></div>
     </div>
-    
+    <script>
+        const usuario_calorias_quemadas = {{ usuario_calorias_quemadas|tojson }};
+    </script>
+
     <script src="../static/js/modules/loader.js"></script>
     <script src="../static/js/modules/menu.js"></script>
     <script src="../static/js/displays.js"></script>

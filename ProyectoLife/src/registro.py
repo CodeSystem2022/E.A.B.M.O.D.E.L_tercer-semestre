@@ -1,8 +1,4 @@
-from datetime import datetime
-from decouple import config
-
 from flask import (
-    flash,
     render_template,
     request,
     session,

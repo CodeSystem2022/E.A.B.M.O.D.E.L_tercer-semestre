@@ -12,6 +12,7 @@ from flask import (
 )
 
 from sqlalchemy import  text
+import requests
 
 login = Blueprint('login', __name__, template_folder='templates')
 
@@ -34,10 +35,12 @@ def getall():
 
         if user is not None:
             error = False
-            print(user.nombre)
             if(user.contraseña == password):
-                return render_template('home.html', nombre=user.nombre)
-
+                session['user_id'] = user.id
+                session['nombre'] = user.nombre
+                return redirect(url_for('calorias_quemadas_user.getall'))
+            else:
+                error = True
         else:
             error = True
 

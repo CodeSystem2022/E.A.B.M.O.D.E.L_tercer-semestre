@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, Date
+from sqlalchemy import Column, Integer, String, ForeignKey, Date, Float
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
 from scripts.cargar_db import conexion_db
@@ -26,7 +26,7 @@ class Imc(Base):
     edad = Column(Date, nullable=False)
     altura = Column(Integer, nullable=False)
     peso = Column(Integer, nullable=False)
-    imc = Column(Integer, nullable=False)
+    imc = Column(Float, nullable=False)
     
     usuario = relationship("Usuario", back_populates="imcs")  # Define the many-to-one relationship
 
@@ -41,7 +41,9 @@ class CaloriasQuemadas(Base):
     edad = Column(Date, nullable=False)
     altura = Column(Integer, nullable=False)
     peso = Column(Integer, nullable=False)
-    actividiad = Column(Integer, nullable=False)
+    actividad = Column(Float, nullable=False)
+    calorias_quemadas = Column(Float, nullable=False)
+    dia_semana = Column(Integer, nullable=False)
 
     usuario = relationship("Usuario", back_populates="calorias_quemadas")  # Define the many-to-one relationship
 
@@ -55,7 +57,7 @@ class PesoIdeal(Base):
     # edad en formato DATE
     edad = Column(Date, nullable=False)
     altura = Column(Integer, nullable=False)
-    peso_ideal = Column(Integer, nullable=False)
+    peso_ideal = Column(Float, nullable=False)
 
     usuario = relationship("Usuario", back_populates="peso_ideal")  # Define the many-to-one relationship
 
