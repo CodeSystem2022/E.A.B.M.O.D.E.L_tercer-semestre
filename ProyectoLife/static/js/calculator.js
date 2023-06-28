@@ -80,6 +80,13 @@
 //     alert("Calorías quemadas durante el día: " + caloriesBurned.toFixed(2));
 // });
 
+
+
+
+
+
+
+
 // Peso ideal
 const ideal_gender= document.querySelector("#gender-icn-btn-wrapper");
 const ideal_age = document.querySelector("#form-fourth_form > div > form > div > div:nth-child(2) > article.form-option-number > article > input[type=number]");
