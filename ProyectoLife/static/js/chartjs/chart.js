@@ -47,6 +47,8 @@ const config1 = {
         }
     }
 };
+
+console.log(usuario_imc);
 const config2 = {
     type: 'bar',
     data: {

@@ -9,7 +9,7 @@ from src.logout import logout
 from src.peso_ideal import peso_ideal
 from src.calorias_quemadas import calorias_quemadas
 from src.imc import imc
-from src.calorias_quemadas_user import calorias_quemadas_user
+from src.salva_datos_user import salva_datos_user
 
 
 app = Flask(__name__)
@@ -31,7 +31,7 @@ app.register_blueprint(logout)
 app.register_blueprint(peso_ideal)
 app.register_blueprint(calorias_quemadas)
 app.register_blueprint(imc)
-app.register_blueprint(calorias_quemadas_user)
+app.register_blueprint(salva_datos_user)
 
 
 if __name__=='__main__':
