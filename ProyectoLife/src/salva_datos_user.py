@@ -29,14 +29,14 @@ def getall():
     datos_usuario = result.fetchall()
 
     dias_semana = {
-            0: 'Domingo',
-            1: 'Lunes',
-            2: 'Martes',
-            3: 'Miércoles',
-            4: 'Jueves',
-            5: 'Viernes',
-            6: 'Sábado'
-        }
+        0: 'Domingo',
+        1: 'Lunes',
+        2: 'Martes',
+        3: 'Miércoles',
+        4: 'Jueves',
+        5: 'Viernes',
+        6: 'Sábado'
+    }
 
     for data in datos_usuario:
         edad = int(datetime.now().year - data.edad.year)
@@ -49,18 +49,21 @@ def getall():
                                                      "actividad":data.actividad, "calorias_quemadas":data.calorias_quemadas,
                                                      "dia":dia}
         
-        # Traemos el IMC
-        query = text("SELECT * FROM imc WHERE id_usuario = :id_usuario ORDER BY id DESC LIMIT 7")
-        result = db.session.execute(query, {"id_usuario": session['user_id']})
-        datos_usuario = result.fetchall()
-        for data in datos_usuario:
-            edad = int(datetime.now().year - data.edad.year)
+    # Traemos el IMC
+    query = text("SELECT * FROM imc WHERE id_usuario = :id_usuario ORDER BY id DESC LIMIT 7")
+    result = db.session.execute(query, {"id_usuario": session['user_id']})
+    datos_usuario = result.fetchall()
+    for data in datos_usuario:
+        edad = int(datetime.now().year - data.edad.year)
 
-            dia = dias_semana[data.dia_semana]
-            # Guardamos todos los datos en formato diccionario
-            usuario_imc = {"user_id":data.id_usuario, "sexo":data.sexo,
-                           "edad":edad, "peso":data.peso, "altura":data.altura,
-                           "imc":data.imc, "dia":dia}
+        dia = dias_semana[data.dia_semana]
+        # Guardamos todos los datos en formato diccionario
+        usuario_imc[data.dia_semana] = {"user_id":data.id_usuario, "sexo":data.sexo,
+                       "edad":edad, "peso":data.peso, "altura":data.altura,
+                       "imc":data.imc, "dia":dia}
 
-    # Enviamos al home
-    return render_template('home.html', nombre=session['nombre'], usuario_calorias_quemadas=usuario_calorias_quemadas, usuario_imc=usuario_imc)
+    # Retornamos los datos en formato JSON
+    return jsonify({
+        "usuario_calorias_quemadas": usuario_calorias_quemadas,
+        "usuario_imc": usuario_imc
+    })

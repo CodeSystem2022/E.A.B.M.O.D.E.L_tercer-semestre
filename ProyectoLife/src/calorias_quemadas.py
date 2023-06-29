@@ -45,8 +45,8 @@ def getall():
             db.session.execute(query, {"id_usuario": session['user_id'], "sexo": sexo, "edad": fecha_nacimiento, "altura": altura, "peso": peso,
                                        "actividad": actividad, "calorias_quemadas": calorias_quemadas, "dia_semana": diasemana})
             db.session.commit()
-            return render_template('home.html', calorias_quemadas=calorias_quemadas, usuario_imc ={}, usuario_calorias_quemadas={})
+            return render_template('home.html', calorias_quemadas=calorias_quemadas)
         except:
-            return render_template('home.html', error_calorias_quemadas=True, usuario_imc ={}, usuario_calorias_quemadas={})
+            return render_template('home.html', error_calorias_quemadas=True)
 
     return render_template('home.html')

@@ -26,4 +26,4 @@ def getall():
     if session.get('user_id') is None:
         return redirect(url_for('login.getall'))
 
-    return render_template('home.html', calorias_quemadas=calorias_quemadas, peso_ideal=peso_ideal, imc=imc)
+    return render_template('home.html', nombre=session['nombre'], calorias_quemadas=calorias_quemadas, peso_ideal=peso_ideal, imc=imc)

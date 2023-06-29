@@ -7,8 +7,6 @@ function createChart(chartId, config) {
 
     return new Chart(ctx, config);
 };
-
-console.log(usuario_calorias_quemadas);
 // Test
 const config1 = {
     type: 'bar',
@@ -48,7 +46,17 @@ const config1 = {
     }
 };
 
-console.log(usuario_imc);
+fetch('/salva_datos_user')
+  .then(response => response.json())
+  .then(data => {
+    // Aquí puedes trabajar con los datos obtenidos en data
+    console.log(data);
+  })
+  .catch(error => {
+    // Manejo de errores
+    console.error(error);
+  });
+
 const config2 = {
     type: 'bar',
     data: {
