@@ -44,22 +44,27 @@ def crear_peso_ideal():
 
 
 if __name__== '__main__':
-    # URL de los alimentos
-    url_alimentos = "ProyectoLife/utils/db_alimentos.csv"
+    try:
+        # URL de los alimentos
+        url_alimentos = "ProyectoLife/utils/db_alimentos.csv"
 
-    # Creamos y cargamos la tabla alimentos
-    lectura_tabla_alimentos(url_alimentos)
+        # Creamos y cargamos la tabla alimentos
+        lectura_tabla_alimentos(url_alimentos)
 
-    # Crear tabla usuario
-    crear_tabla_usuarios()
+        # Crear tabla usuario
+        crear_tabla_usuarios()
 
-    # Crear tabla imc
-    crear_tabla_imc()
+        # Crear tabla imc
+        crear_tabla_imc()
 
-    # Crear tabla calorias quemadas
-    crear_calorias_quemadas()
+        # Crear tabla calorias quemadas
+        crear_calorias_quemadas()
 
-    # Crear tabla peso ideal
-    crear_peso_ideal()
+        # Crear tabla peso ideal
+        crear_peso_ideal()
+
+        print("Base de datos creada y cargada correctamente")
+    except Exception as e:
+        print("Error al crear la base de datos: ", e)
 
 

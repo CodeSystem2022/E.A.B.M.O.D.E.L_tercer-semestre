@@ -27,6 +27,7 @@ class Imc(Base):
     altura = Column(Integer, nullable=False)
     peso = Column(Integer, nullable=False)
     imc = Column(Float, nullable=False)
+    dia_semana = Column(Integer, nullable=False)
     
     usuario = relationship("Usuario", back_populates="imcs")  # Define the many-to-one relationship
 

@@ -26,6 +26,7 @@ def getall():
             sexo = request.form['gender']
             peso = request.form['peso']
             id_usuario = session['user_id']
+            diasemana = request.form['diasemana']
 
             edad = datetime.strptime(fecha_nacimiento, '%Y-%m-%d').date()
             edad = int(datetime.now().year - edad.year)
@@ -33,11 +34,12 @@ def getall():
             imc = int(peso) / (estatura_metros ** 2)
             imc = round(imc, 2)
             # enviamos el peso ideal a la db
-            query = text("INSERT INTO imc (id_usuario, sexo, edad, altura, peso, imc) VALUES (:id_usuario, :sexo, :edad, :altura, :peso, :imc)")
-            db.session.execute(query, {"id_usuario": id_usuario, "sexo": sexo, "edad": fecha_nacimiento, "altura": altura, "peso": peso, "imc": imc})
+            query = text("INSERT INTO imc (id_usuario, sexo, edad, altura, peso, imc, dia_semana) VALUES (:id_usuario, :sexo, :edad, :altura, :peso, :imc, :dia_semana)")
+            db.session.execute(query, {"id_usuario": id_usuario, "sexo": sexo, "edad": fecha_nacimiento, "altura": altura, "peso": peso, "imc": imc, "dia_semana": diasemana})
             db.session.commit()
-            return render_template('home.html', imc=imc)
+            return render_template('home.html', imc=imc, usuario_calorias_quemadas={}, usuario_imc={})
         except:
-            return render_template('home.html', error_imc=True)
+            print("Error al calcular el IMC")
+            return render_template('home.html', error_imc=True, usuario_calorias_quemadas={}, usuario_imc={})
 
-    return render_template('home.html', )
+    return render_template('home.html', id_usuario_usuario_calorias_quemadas={}, usuario_imc={})

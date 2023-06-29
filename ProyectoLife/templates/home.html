@@ -128,6 +128,17 @@
 
                         </div>
                     </div>
+                    <div class="form-group">
+                        <select name="diasemana">
+                            <option value="0">Domingo</option>
+                            <option value="1">Lunes</option>
+                            <option value="2">Martes</option>
+                            <option value="3">Miércoles</option>
+                            <option value="4">Jueves</option>
+                            <option value="5">Viernes</option>
+                            <option value="6">Sábado</option>
+                          </select>
+                    </div>
 
                     <button type="submit">
                         <div class="button-style-3">
@@ -400,6 +411,7 @@
     </div>
     <script>
         const usuario_calorias_quemadas = {{ usuario_calorias_quemadas|tojson }};
+        const usuario_calorias_quemadas = {{ usuario_imc|tojson }};
     </script>
 
     <script src="../static/js/modules/loader.js"></script>

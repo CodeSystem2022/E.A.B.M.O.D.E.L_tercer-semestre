@@ -38,7 +38,7 @@ def getall():
             if(user.contraseña == password):
                 session['user_id'] = user.id
                 session['nombre'] = user.nombre
-                return redirect(url_for('calorias_quemadas_user.getall'))
+                return redirect(url_for('salva_datos_user.getall'))
             else:
                 error = True
         else:

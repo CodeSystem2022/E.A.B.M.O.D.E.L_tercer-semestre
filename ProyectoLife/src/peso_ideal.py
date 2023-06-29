@@ -42,6 +42,6 @@ def getall():
             db.session.execute(query, {"id_usuario": id_usuario, "sexo": sexo, "edad": fecha_nacimiento, "altura": altura, "peso_ideal": peso_ideal})
             db.session.commit()
         except:
-            return render_template('home.html', error_peso_ideal=True)
+            return render_template('home.html', error_peso_ideal=True, usuario_calorias_quemadas={}, usuario_imc={})
 
-    return render_template('home.html', peso_ideal=peso_ideal)
+    return render_template('home.html', peso_ideal=peso_ideal, usuario_calorias_quemadas={}, usuario_imc={})
