@@ -67,12 +67,14 @@
   color: #fff;
   font-family: Verdana;
   margin-left: 10px;
+  margin-bottom: 0px;
 }
 .alert p a,
 .alert p a:visited,
 .alert p a:active {
   color: #fff;
 }
+
 .alert .open {
   margin-left: auto;
   margin-right: 5px;
@@ -86,7 +88,11 @@
 .alert .close:hover, .alert .open:hover {
   transform: scale(1.3);
 }
-
+.alert .icon__wrapper svg {
+  height: 24px;
+  width: 24px;
+  fill: #fff;
+}
 
 
 
