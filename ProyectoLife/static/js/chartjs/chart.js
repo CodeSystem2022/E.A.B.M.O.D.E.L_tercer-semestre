@@ -1,121 +1,121 @@
 ﻿"use strict";
 
-//fetch('/salva_datos_user')
-//.then(response => response.json())
-//.then(data => {
-//    // Aquí puedes trabajar con los datos obtenidos en data
-//    console.log(data);
+fetch('/salva_datos_user')
+.then(response => response.json())
+.then(data => {
+    // Aquí puedes trabajar con los datos obtenidos en data
+    console.log(data);
 
-    const elementsBACK = //data;
-    {
-        "usuario_calorias_quemadas": {
-            "0": {
-                "actividad": 0.5,
-                "altura": 176,
-                "calorias_quemadas": 77.5,
-                "dia": "Domingo",
-                "edad": 25,
-                "peso": 60,
-                "sexo": "male",
-                "user_id": 1
-            },
-            "1": {
-                "actividad": 0.5,
-                "altura": 176,
-                "calorias_quemadas": 57.5,
-                "dia": "Lunes",
-                "edad": 25,
-                "peso": 60,
-                "sexo": "male",
-                "user_id": 1
-            },
-            "2": {
-                "actividad": 0.5,
-                "altura": 176,
-                "calorias_quemadas": 157.5,
-                "dia": "Lunes",
-                "edad": 25,
-                "peso": 60,
-                "sexo": "male",
-                "user_id": 1
-            },
-            "5": {
-                "actividad": 0.5,
-                "altura": 176,
-                "calorias_quemadas": 250.5,
-                "dia": "Viernes",
-                "edad": 25,
-                "peso": 60,
-                "sexo": "male",
-                "user_id": 1
-            }
-        },
-        "usuario_imc": {
-            "0": {
-                "altura": 176,
-                "dia": "Domingo",
-                "edad": 25,
-                "imc": 12.10,
-                "peso": 60,
-                "sexo": "male",
-                "user_id": 1
-            },
-            "1": {
-                "altura": 176,
-                "dia": "Lunes",
-                "edad": 25,
-                "imc": 11.50,
-                "peso": 60,
-                "sexo": "male",
-                "user_id": 1
-            },
-            "2": {
-                "altura": 176,
-                "dia": "Martes",
-                "edad": 25,
-                "imc": 10.37,
-                "peso": 60,
-                "sexo": "male",
-                "user_id": 1
-            },
-            "3": {
-                "altura": 176,
-                "dia": "Miércoles",
-                "edad": 26,
-                "imc": 11.37,
-                "peso": 60,
-                "sexo": "male",
-                "user_id": 1
-            },
-            "4": {
-                "altura": 176,
-                "dia": "Jueves",
-                "edad": 25,
-                "imc": 10.9,
-                "peso": 60,
-                "sexo": "male",
-                "user_id": 1
-            },
-            "5": {
-                "altura": 176,
-                "dia": "Viernes",
-                "edad": 25,
-                "imc": 10.8,
-                "peso": 60,
-                "sexo": "male",
-                "user_id": 1
-            },
-            "6": {
-                "altura": 176,
-                "dia": "Sabado",
-                "edad": 25,
-                "imc": 10.2,
-                "peso": 60,
-                "sexo": "male",
-                "user_id": 1
-            }
-        }
-    }
+    const elementsBACK = data;
+    //{
+    //    "usuario_calorias_quemadas": {
+    //        "0": {
+    //            "actividad": 0.5,
+    //            "altura": 176,
+    //            "calorias_quemadas": 77.5,
+    //            "dia": "Domingo",
+    //            "edad": 25,
+    //            "peso": 60,
+    //            "sexo": "male",
+    //            "user_id": 1
+    //        },
+    //        "1": {
+    //            "actividad": 0.5,
+    //            "altura": 176,
+    //            "calorias_quemadas": 57.5,
+    //            "dia": "Lunes",
+    //            "edad": 25,
+    //            "peso": 60,
+    //            "sexo": "male",
+    //            "user_id": 1
+    //        },
+    //        "2": {
+    //            "actividad": 0.5,
+    //            "altura": 176,
+    //            "calorias_quemadas": 157.5,
+    //            "dia": "Lunes",
+    //            "edad": 25,
+    //            "peso": 60,
+    //            "sexo": "male",
+    //            "user_id": 1
+    //        },
+    //        "5": {
+    //            "actividad": 0.5,
+    //            "altura": 176,
+    //            "calorias_quemadas": 250.5,
+    //            "dia": "Viernes",
+    //            "edad": 25,
+    //            "peso": 60,
+    //            "sexo": "male",
+    //            "user_id": 1
+    //        }
+    //    },
+    //    "usuario_imc": {
+    //        "0": {
+    //            "altura": 176,
+    //            "dia": "Domingo",
+    //            "edad": 25,
+    //            "imc": 12.10,
+    //            "peso": 60,
+    //            "sexo": "male",
+    //            "user_id": 1
+    //        },
+    //        "1": {
+    //            "altura": 176,
+    //            "dia": "Lunes",
+    //            "edad": 25,
+    //            "imc": 11.50,
+    //            "peso": 60,
+    //            "sexo": "male",
+    //            "user_id": 1
+    //        },
+    //        "2": {
+    //            "altura": 176,
+    //            "dia": "Martes",
+    //            "edad": 25,
+    //            "imc": 10.37,
+    //            "peso": 60,
+    //            "sexo": "male",
+    //            "user_id": 1
+    //        },
+    //        "3": {
+    //            "altura": 176,
+    //            "dia": "Miércoles",
+    //            "edad": 26,
+    //            "imc": 11.37,
+    //            "peso": 60,
+    //            "sexo": "male",
+    //            "user_id": 1
+    //        },
+    //        "4": {
+    //            "altura": 176,
+    //            "dia": "Jueves",
+    //            "edad": 25,
+    //            "imc": 10.9,
+    //            "peso": 60,
+    //            "sexo": "male",
+    //            "user_id": 1
+    //        },
+    //        "5": {
+    //            "altura": 176,
+    //            "dia": "Viernes",
+    //            "edad": 25,
+    //            "imc": 10.8,
+    //            "peso": 60,
+    //            "sexo": "male",
+    //            "user_id": 1
+    //        },
+    //        "6": {
+    //            "altura": 176,
+    //            "dia": "Sabado",
+    //            "edad": 25,
+    //            "imc": 10.2,
+    //            "peso": 60,
+    //            "sexo": "male",
+    //            "user_id": 1
+    //        }
+    //    }
+    //}
 
     // Calc imc % on DOM
     function imc_on_dom (){
@@ -332,8 +332,7 @@
     api_call();
     imc_on_dom();
     calorias_quemadas_on_dom();
-//})
-//.catch(error => {
-//    // Manejo de errores
-//    console.error(error);
-//});
+})
+.catch(error => {
+    console.error(error);
+});
