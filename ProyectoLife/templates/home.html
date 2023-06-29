@@ -150,6 +150,7 @@
                             </div>
                         </div>
                     </button>
+                    <div  class="condicional-if">
                     {%if imc%}
                     <div>
                         <h1>Tu imc: <span>{{imc}}</span></h1>
@@ -166,6 +167,7 @@
                         <p>Tus datos ingresados son incorectos</p>
                     </div>
                     {% endif %}
+                    </div>
 
                 </form>
             </div>
@@ -265,6 +267,8 @@
                             </div>
                         </div>
                     </button>
+                    
+                    <div class="condicional-if">
                     {%if calorias_quemadas%}
                     <div>
                         <h1>Tus calorias quemadas son: <span>{{calorias_quemadas}}</span></h1>
@@ -281,6 +285,8 @@
                         <p>Tus datos ingresados son incorectos</p>
                     </div>
                     {% endif %}
+                </div>
+
                 </form>
             </div>
         
@@ -349,6 +355,7 @@
                             </div>
                         </div>
                     </button>
+                    <div  class="condicional-if">
                     {%if peso_ideal%}
                     <div>
                         <h1>Tus peso ideal sería: <span>{{peso_ideal}}</span></h1>
@@ -365,6 +372,7 @@
                             <p>Tus datos ingresados son incorectos</p>
                         </div>
                     {% endif %}
+                    </div>
                 </form>
             </div>
                 
