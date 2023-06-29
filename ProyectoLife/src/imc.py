@@ -37,9 +37,9 @@ def getall():
             query = text("INSERT INTO imc (id_usuario, sexo, edad, altura, peso, imc, dia_semana) VALUES (:id_usuario, :sexo, :edad, :altura, :peso, :imc, :dia_semana)")
             db.session.execute(query, {"id_usuario": id_usuario, "sexo": sexo, "edad": fecha_nacimiento, "altura": altura, "peso": peso, "imc": imc, "dia_semana": diasemana})
             db.session.commit()
-            return render_template('home.html', imc=imc, usuario_calorias_quemadas={}, usuario_imc={})
+            return render_template('home.html', imc=imc)
         except:
             print("Error al calcular el IMC")
-            return render_template('home.html', error_imc=True, usuario_calorias_quemadas={}, usuario_imc={})
+            return render_template('home.html', error_imc=True)
 
-    return render_template('home.html', id_usuario_usuario_calorias_quemadas={}, usuario_imc={})
+    return render_template('home.html')

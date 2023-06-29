@@ -46,7 +46,7 @@ def crear_peso_ideal():
 if __name__== '__main__':
     try:
         # URL de los alimentos
-        url_alimentos = "ProyectoLife/utils/db_alimentos.csv"
+        url_alimentos = "utils/db_alimentos.csv"
 
         # Creamos y cargamos la tabla alimentos
         lectura_tabla_alimentos(url_alimentos)

@@ -137,7 +137,7 @@
                             <option value="4">Jueves</option>
                             <option value="5">Viernes</option>
                             <option value="6">Sábado</option>
-                          </select>
+                        </select>
                     </div>
 
                     <button type="submit">
@@ -150,6 +150,7 @@
                             </div>
                         </div>
                     </button>
+                    <div  class="condicional-if">
                     {%if imc%}
                     <div>
                         <h1>Tu imc: <span>{{imc}}</span></h1>
@@ -166,6 +167,7 @@
                         <p>Tus datos ingresados son incorectos</p>
                     </div>
                     {% endif %}
+                    </div>
 
                 </form>
             </div>
@@ -252,7 +254,7 @@
                                 <option value="4">Jueves</option>
                                 <option value="5">Viernes</option>
                                 <option value="6">Sábado</option>
-                              </select>
+                            </select>
                         </div>
 
                     <button type="submit">
@@ -265,6 +267,8 @@
                             </div>
                         </div>
                     </button>
+                    
+                    <div class="condicional-if">
                     {%if calorias_quemadas%}
                     <div>
                         <h1>Tus calorias quemadas son: <span>{{calorias_quemadas}}</span></h1>
@@ -281,6 +285,8 @@
                         <p>Tus datos ingresados son incorectos</p>
                     </div>
                     {% endif %}
+                </div>
+
                 </form>
             </div>
         
@@ -349,6 +355,7 @@
                             </div>
                         </div>
                     </button>
+                    <div  class="condicional-if">
                     {%if peso_ideal%}
                     <div>
                         <h1>Tus peso ideal sería: <span>{{peso_ideal}}</span></h1>
@@ -365,6 +372,7 @@
                             <p>Tus datos ingresados son incorectos</p>
                         </div>
                     {% endif %}
+                    </div>
                 </form>
             </div>
                 
@@ -383,19 +391,21 @@
 
             <article class="second_section_row_second" id="second_section_row_second">
                 <div class="item-cal-sec-title">
-                    <h5>Índice de masa corporal</h5>
+                    <h5>Calorias Quemadas</h5>
                 </div>
                 <div class="item-cal-sec-porc">
-                    <h5>5%</h5>
+                    <h4 id="calorias_quemadas_h4">5%</h4>
+                    <h4 id="calorias_quemadas1_h4">5%</h4>
                 </div>
             </article>
 
             <article class="second_section_row_third" id="second_section_row_third">
                 <div class="item-cal-sec-title">
-                    <h5>Calorias Quemadas</h5>
+                    <h5>Indice de masa corporal</h5>
                 </div>
                 <div class="item-cal-sec-porc">
-                    <h5>5%</h5>
+                    <h4 id="imc_h4"></h4>
+                    <h4 id="imc1_h4"></h4>
                 </div>
             </article>
         </section>
@@ -405,14 +415,9 @@
 
     </main>
 
-
     <div id="loader">
         <div class="loader-spinner"></div>
     </div>
-    <script>
-        const usuario_calorias_quemadas = {{ usuario_calorias_quemadas|tojson }};
-        const usuario_calorias_quemadas = {{ usuario_imc|tojson }};
-    </script>
 
     <script src="../static/js/modules/loader.js"></script>
     <script src="../static/js/modules/menu.js"></script>
