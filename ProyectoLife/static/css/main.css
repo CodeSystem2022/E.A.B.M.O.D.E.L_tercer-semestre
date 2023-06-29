@@ -26,7 +26,7 @@
 
 .alert {
   min-height: 67px;
-  width: 560px;
+  width: 100%;
   max-width: 90%;
   border-radius: 12px;
   padding: 16px 22px 17px 20px;
@@ -210,6 +210,43 @@ input[type=text], input[type=email], input[type=tel], input[type=url], input[typ
   margin-bottom: 30px;
   padding: 15px 0px;
   color: #fff;
+  cursor: pointer;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 230px;
+  height: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size:14px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 3px solid rgb(79, 78, 78);
+}
+
+
+.button-style-4{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 15px 0px;
+  color: #fff;
+  cursor: pointer;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 230px;
+  height: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size:14px;
+  background-color: #82c337;
+  border: 3px solid #82c337;
+}
+
+.button-style-4:hover{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 15px 0px;
+  color: rgb(79, 78, 78);
   cursor: pointer;
   display:flex;
   flex-direction: row;
